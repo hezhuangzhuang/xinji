@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.ConfListActivity">
+
+    <include
+        android:id="@+id/rl_include"
+        layout="@layout/common_title_layout_old"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/tv_create_conf"
+        app:layout_constraintTop_toBottomOf="@id/rl_include"
+        app:srlAccentColor="#fff"
+        app:srlEnableLoadMoreWhenContentNotFull="true"
+        app:srlEnablePreviewInEditMode="false"
+        app:srlPrimaryColor="#faf1f0">
+
+        <!--    srlEnableHeaderTranslationContent-->
+        <!--    boolean-->
+        <!--    拖动Header的时候是否同时拖动内容（默认true）-->
+
+        <!--    srlEnableFooterTranslationContent-->
+        <!--    boolean-->
+        <!--    拖动Footer的时候是否同时拖动内容（默认true）-->
+
+        <!--    srlEnablePreviewInEditMode-->
+        <!--    boolean-->
+        <!--    是否在编辑模式时显示预览效果（默认true）-->
+
+        <!--    srlEnablePureScrollMode-->
+        <!--    boolean-->
+        <!--    是否开启纯滚动模式（默认false-开启时只支持一个子视图）-->
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:nestedScrollingEnabled="false" />
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <TextView
+        android:id="@+id/tv_create_conf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/shape_bt_login_bg"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="发起会议"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_bg_comment_10"
+    android:paddingBottom="25dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:gravity="center"
+        android:text="您的账户在其它设备登录"
+        android:textColor="@color/color_333"
+        android:textSize="19sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="退出后作答历史将不会保存"
+        android:textColor="@color/color_677078"
+        android:textSize="17sp"/>
+
+    <View
+        android:id="@+id/center_view"
+        android:layout_width="25dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tv_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/shape_register_bt_bg"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="退出"
+        android:textColor="@color/color_E42417"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/tv_cancle"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/center_view"
+        android:background="@drawable/shape_cancle_bt_bg"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="取消"
+        android:textColor="@color/color_677078"
+        android:textSize="15sp"/>
+
+
+</RelativeLayout>

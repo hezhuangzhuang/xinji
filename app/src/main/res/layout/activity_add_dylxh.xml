@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zxwl.xinji.activity.AddDylxhActivity">
+
+    <include layout="@layout/common_title_layout_old"/>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="6dp"
+            android:paddingLeft="13dp"
+            android:paddingTop="6dp"
+            android:text="党员姓名"
+            android:textColor="@color/color_333"/>
+
+        <com.zxwl.xinji.widget.ContainsEmojiEditText
+            android:id="@+id/et_party_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="请输入党员姓名"
+            android:paddingBottom="12dp"
+            android:paddingLeft="12dp"
+            android:gravity="center_vertical|right"
+            android:paddingRight="12dp"
+            android:paddingTop="12dp"
+            android:singleLine="true"
+            android:maxLength="64"
+            android:textColor="@color/color_333"
+            android:textColorHint="@color/color_999"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:background="@color/color_eee"/>
+<LinearLayout
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="6dp"
+        android:paddingLeft="13dp"
+        android:paddingTop="6dp"
+        android:text="党员联系电话"
+        android:textColor="@color/color_333"/>
+
+    <com.zxwl.xinji.widget.ContainsEmojiEditText
+        android:id="@+id/et_party_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="请输入党员联系电话"
+        android:gravity="center_vertical|right"
+        android:inputType="number"
+        android:maxLength="11"
+        android:paddingBottom="12dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="12dp"
+        android:singleLine="true"
+        android:textColor="@color/color_333"
+        android:textColorHint="@color/color_999"
+        android:textSize="16sp"/>
+</LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:background="@color/color_eee"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="6dp"
+        android:paddingLeft="13dp"
+        android:paddingTop="6dp"
+        android:text="联系户姓名"
+        android:textColor="@color/color_333"/>
+
+    <com.zxwl.xinji.widget.ContainsEmojiEditText
+        android:id="@+id/et_contact_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="请输入联系户姓名"
+        android:paddingBottom="12dp"
+        android:gravity="center_vertical|right"
+        android:paddingLeft="12dp"
+        android:maxLength="64"
+        android:paddingRight="12dp"
+        android:paddingTop="12dp"
+        android:singleLine="true"
+        android:textColor="@color/color_333"
+        android:textColorHint="@color/color_999"
+        android:textSize="16sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:background="@color/color_eee"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="6dp"
+        android:paddingLeft="13dp"
+        android:paddingTop="6dp"
+        android:text="联系户电话"
+        android:textColor="@color/color_333"/>
+
+    <com.zxwl.xinji.widget.ContainsEmojiEditText
+        android:id="@+id/et_contact_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="请输入联系户电话"
+        android:inputType="number"
+        android:gravity="center_vertical|right"
+        android:paddingBottom="12dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="12dp"
+        android:maxLength="11"
+        android:singleLine="true"
+        android:textColor="@color/color_333"
+        android:textColorHint="@color/color_999"
+        android:textSize="16sp"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:background="@color/color_eee"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="6dp"
+        android:paddingLeft="13dp"
+        android:paddingTop="6dp"
+        android:text="联系户住址"
+        android:textColor="@color/color_333"/>
+
+    <com.zxwl.xinji.widget.ContainsEmojiEditText
+        android:id="@+id/et_contact_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="请输入联系户住址"
+        android:paddingBottom="12dp"
+        android:paddingLeft="12dp"
+        android:maxLength="64"
+        android:paddingRight="12dp"
+        android:paddingTop="12dp"
+        android:gravity="center_vertical|right"
+        android:singleLine="true"
+        android:textColor="@color/color_333"
+        android:textColorHint="@color/color_999"
+        android:textSize="16sp"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:background="@color/color_eee"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="6dp"
+        android:paddingLeft="13dp"
+        android:paddingTop="6dp"
+        android:text="联系户工作单位"
+        android:textColor="@color/color_333"/>
+
+    <EditText
+        android:id="@+id/et_contact_unit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="请输入联系户工作单位"
+        android:paddingBottom="12dp"
+        android:paddingLeft="12dp"
+        android:maxLength="64"
+        android:paddingRight="12dp"
+        android:paddingTop="12dp"
+        android:gravity="center_vertical|right"
+        android:singleLine="true"
+        android:textColor="@color/color_333"
+        android:textColorHint="@color/color_999"
+        android:textSize="16sp"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:background="@color/color_eee"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="6dp"
+        android:paddingLeft="13dp"
+        android:paddingTop="6dp"
+        android:text="时间"
+        android:textColor="@color/color_333"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="12dp"
+            android:drawableRight="@mipmap/ic_array_right"
+            android:gravity="center_vertical|right"
+            android:textColor="@color/color_333"
+            android:textSize="16sp"
+            tools:text="2018-09-09"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:background="@color/color_eee"/>
+
+</LinearLayout>

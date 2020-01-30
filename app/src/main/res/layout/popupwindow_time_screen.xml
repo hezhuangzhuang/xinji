@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_start_time_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15sp"
+        android:text="开始时间"
+        android:textColor="@color/color_999"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_start_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/tv_start_time_lable"
+        android:drawableRight="@mipmap/ic_array_right"
+        android:drawablePadding="6dp"
+        android:gravity="center_vertical|right"
+        android:padding="15sp"
+        android:text="请选择开始时间"
+        android:textColor="@color/color_333"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/start_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/tv_start_time_lable"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/color_eee" />
+
+    <TextView
+        android:id="@+id/tv_end_time_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/start_line"
+        android:padding="15sp"
+        android:text="结束时间"
+        android:textColor="@color/color_999"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_end_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/start_line"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/tv_start_time_lable"
+        android:drawableRight="@mipmap/ic_array_right"
+        android:drawablePadding="6dp"
+        android:gravity="center_vertical|right"
+        android:padding="15sp"
+        android:text="请选择结束时间"
+        android:textColor="@color/color_333"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/end_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/tv_end_time_lable"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/color_eee" />
+
+    <Space
+        android:id="@+id/center_space"
+        android:layout_width="20dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tv_cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/end_line"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="25dp"
+        android:layout_toLeftOf="@id/center_space"
+        android:background="@drawable/shape_dialog_bt_bg"
+        android:gravity="center"
+        android:padding="13dp"
+        android:text="取消"
+        android:textColor="@color/color_333"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/end_line"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="25dp"
+        android:layout_toRightOf="@id/center_space"
+        android:background="@drawable/shape_dialog_bt_bg"
+        android:gravity="center"
+        android:padding="13dp"
+        android:text="确定"
+        android:textColor="@color/color_333"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/tv_ok"
+        android:background="@color/color_eee" />
+</RelativeLayout>

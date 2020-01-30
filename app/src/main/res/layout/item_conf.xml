@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:paddingLeft="24dp"
+    android:paddingRight="14dp"
+    android:layout_marginBottom="10dp"
+    android:paddingTop="24dp">
+
+    <!--item_三会一课-->
+
+    <ImageView
+        android:id="@+id/iv_states"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="14dp"
+        tools:src="@mipmap/ic_conf_dk"/>
+
+    <TextView
+        android:id="@+id/tv_conf_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_states"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@id/iv_states"
+        android:ellipsize="end"
+        tools:text="年终总结年终总结年终总结年终总结年终总结年终总结年终总结年终总结年终总结年终总结"
+        android:maxLines="1"
+        android:textColor="@color/color_333"
+        android:textSize="17sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_conf_name"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@id/iv_states"
+        android:drawableLeft="@mipmap/ic_conf_time"
+        android:drawablePadding="6dp"
+        tools:text="20190202"
+        android:textColor="@color/color_999"
+        android:textSize="13sp"/>
+
+    <TextView
+        android:id="@+id/tv_local"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_time"
+        android:layout_marginBottom="12dp"
+        android:layout_toRightOf="@id/iv_states"
+        android:drawableLeft="@mipmap/ic_conf_local"
+        android:drawablePadding="6dp"
+        tools:text="20190202"
+        android:textColor="@color/color_999"
+        android:textSize="13sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_eee"
+        android:layout_below="@id/tv_local"
+        />
+
+</RelativeLayout>

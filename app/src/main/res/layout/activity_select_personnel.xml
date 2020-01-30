@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zxwl.xinji.activity.SelectPersonnelActivity">
+
+    <include layout="@layout/common_title_layout_old"/>
+
+    <TextView
+        android:id="@+id/tv_hint_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/ic_select_info"
+        android:drawablePadding="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:text="请勾选"
+        android:textColor="@color/color_E64A3A"
+        android:textSize="11sp"/>
+
+    <TextView
+        android:id="@+id/tv_all_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/ic_select_person_false"
+        android:drawablePadding="25dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="20dp"
+        android:text="全选"
+        android:gravity="center_vertical"
+        android:textColor="@color/color_333"
+        android:textSize="15sp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.zxwl.xinji.widget.indexbar.IndexLayout
+            android:id="@+id/index_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+
+</LinearLayout>

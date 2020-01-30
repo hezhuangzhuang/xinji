@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.zxwl.commonlibrary.widget.banner.BannerView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
+        android:visibility="gone" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_wsbs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableTop="@mipmap/ic_study_djzx"
+            android:drawablePadding="6dp"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="党建资讯"
+            android:textColor="@color/color_333"
+            android:textSize="13sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/tv_wsbss"
+            />
+
+        <TextView
+            android:id="@+id/tv_wsbss"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@mipmap/ic_study_gzdt"
+            android:drawablePadding="6dp"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="工作动态"
+            android:textColor="@color/color_333"
+            android:textSize="13sp"
+            android:visibility="visible"
+            app:layout_constraintLeft_toRightOf="@+id/tv_wsbs"
+            app:layout_constraintRight_toLeftOf="@+id/tv_sxll"
+            app:layout_constraintTop_toTopOf="@id/tv_wsbs" />
+
+        <TextView
+            android:id="@+id/tv_sxll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@mipmap/ic_study_sxll"
+            android:drawablePadding="6dp"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="思想理论"
+            android:textColor="@color/color_333"
+            android:textSize="13sp"
+            android:visibility="visible"
+            app:layout_constraintLeft_toRightOf="@+id/tv_wsbss"
+            app:layout_constraintRight_toLeftOf="@+id/tv_ylbz"
+            app:layout_constraintTop_toTopOf="@+id/tv_wsbs" />
+
+        <TextView
+            android:id="@+id/tv_ylbz"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@mipmap/ic_study_dzdg"
+            android:drawablePadding="6dp"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="党章党规"
+            android:textColor="@color/color_333"
+            android:textSize="13sp"
+            app:layout_constraintLeft_toRightOf="@id/tv_sxll"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_wsbs" />
+
+
+        <TextView
+            android:id="@+id/tv_zgwj"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableTop="@mipmap/ic_study_zgwj"
+            android:drawablePadding="6dp"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:text="组工文件"
+            android:textColor="@color/color_333"
+            android:textSize="13sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/tv_wsbss"
+            app:layout_constraintTop_toBottomOf="@+id/tv_wsbs" />
+
+        <TextView
+            android:id="@+id/tv_dwwd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@mipmap/ic_study_dwzs"
+            android:drawablePadding="6dp"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:text="党务知识"
+            android:textColor="@color/color_333"
+            android:textSize="13sp"
+            android:visibility="visible"
+            app:layout_constraintLeft_toRightOf="@+id/tv_wsbs"
+            app:layout_constraintRight_toLeftOf="@+id/tv_sxll"
+            app:layout_constraintTop_toTopOf="@id/tv_zgwj" />
+
+        <TextView
+            android:id="@+id/tv_xdycjy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@mipmap/ic_study_xdycjy"
+            android:drawablePadding="6dp"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:text="远程教育"
+            android:textColor="@color/color_333"
+            android:textSize="13sp"
+            android:visibility="visible"
+            app:layout_constraintLeft_toRightOf="@+id/tv_dwwd"
+            app:layout_constraintRight_toLeftOf="@+id/tv_zxks"
+            app:layout_constraintTop_toTopOf="@id/tv_zgwj" />
+
+        <TextView
+            android:id="@+id/tv_zxks"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@mipmap/ic_study_zxks"
+            android:drawablePadding="6dp"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:text="在线考试"
+            android:textColor="@color/color_333"
+            android:textSize="13sp"
+            app:layout_constraintLeft_toRightOf="@+id/tv_xdycjy"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_zgwj" />
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_notif"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/ic_home_notif"
+            android:drawablePadding="12dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="本系统将于3月24日晚23:30至24:00更本系统将于3月24日晚23:30至24:00更..."
+            android:textColor="@color/color_333" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="20dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:background="@color/color_eee" />
+
+        <TextView
+            android:id="@+id/tv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="更多"
+            android:textColor="@color/color_999"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:paddingLeft="13dp">-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@mipmap/ic_study_hot"-->
+<!--            />-->
+
+<!--    </LinearLayout>-->
+
+</LinearLayout>

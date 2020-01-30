@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.VillageListActivity">
+
+    <include layout="@layout/common_title_layout_old" />
+
+    <include layout="@layout/include_village_top" />
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_dzzcy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/tv_people_number"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/ic_item_village_cjh"
+            android:drawablePadding="11dp"
+            android:gravity="center"
+            android:text="村党组织成员"
+            android:textColor="@color/color_333"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_cwhcy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/tv_people_number"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/ic_item_village_cjh"
+            android:drawablePadding="11dp"
+            android:gravity="center"
+            android:text="村委会成员"
+            android:textColor="@color/color_333"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_cjhcy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/tv_people_number"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/ic_item_village_cjh"
+            android:drawablePadding="11dp"
+            android:gravity="center"
+            android:text="村监会成员"
+            android:textColor="@color/color_333"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_hzhbcy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/tv_people_number"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/ic_item_village_cjh"
+            android:drawablePadding="11dp"
+            android:gravity="center"
+            android:text="合作组织成员"
+            android:textColor="@color/color_333"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:layout_marginBottom="20dp"
+        app:srlAccentColor="#fff"
+        app:srlEnableLoadMoreWhenContentNotFull="true"
+        app:srlEnablePreviewInEditMode="false"
+        app:srlPrimaryColor="#faf1f0">
+
+        <!--    srlEnableHeaderTranslationContent-->
+        <!--    boolean-->
+        <!--    拖动Header的时候是否同时拖动内容（默认true）-->
+
+        <!--    srlEnableFooterTranslationContent-->
+        <!--    boolean-->
+        <!--    拖动Footer的时候是否同时拖动内容（默认true）-->
+
+        <!--    srlEnablePreviewInEditMode-->
+        <!--    boolean-->
+        <!--    是否在编辑模式时显示预览效果（默认true）-->
+
+        <!--    srlEnablePureScrollMode-->
+        <!--    boolean-->
+        <!--    是否开启纯滚动模式（默认false-开启时只支持一个子视图）-->
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:nestedScrollingEnabled="false" />
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/tb_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/color_f6f6f6"
+        android:visibility="gone"
+        app:tl_indicator_color="@color/color_E42417"
+        app:tl_indicator_corner_radius="@dimen/tab_indicator_corner_tiny_radius"
+        app:tl_indicator_height="2dp"
+        app:tl_indicator_width="@dimen/tab_indicator_center_width"
+        app:tl_indicator_width_equal_title="false"
+        app:tl_tab_padding="@dimen/tab_bar_item_padding"
+        app:tl_tab_space_equal="true"
+        app:tl_textSelectColor="@color/color_E42417"
+        app:tl_textUnselectColor="@color/color_333"
+        app:tl_textsize="16sp" />
+
+    <com.zxwl.commonlibrary.widget.NoScrollViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:visibility="gone"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</LinearLayout>

@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".activity.ServiceMoreActivity">
+
+    <include
+        android:id="@+id/rl_include"
+        layout="@layout/common_title_layout_old" />
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:paddingBottom="20dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_chuxing_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="14dp"
+                android:text="出行"
+                android:textColor="@color/color_333"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/tv_one"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="20dp"
+                android:drawableTop="@mipmap/ic_service_hcpyd"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:text="火车票预订"
+                android:textColor="@color/color_333"
+                android:textSize="15sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/tv_two"
+                app:layout_constraintTop_toBottomOf="@+id/tv_chuxing_lable" />
+
+            <TextView
+                android:id="@+id/tv_two"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawableTop="@mipmap/ic_service_hbyd"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:text="航班预订"
+                android:textColor="@color/color_333"
+                android:textSize="15sp"
+                android:visibility="visible"
+                app:layout_constraintLeft_toRightOf="@+id/tv_one"
+                app:layout_constraintRight_toLeftOf="@+id/tv_three"
+                app:layout_constraintTop_toTopOf="@+id/tv_one" />
+
+            <TextView
+                android:id="@+id/tv_three"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="12dp"
+                android:drawableTop="@mipmap/ic_service_gslk"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:text="高速路况"
+                android:textColor="@color/color_333"
+                android:textSize="15sp"
+                android:visibility="visible"
+                app:layout_constraintLeft_toRightOf="@+id/tv_two"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_one" />
+
+            <TextView
+                android:id="@+id/tv_four"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:drawableTop="@mipmap/ic_service_wzcx"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:text="违章查询"
+                android:textColor="@color/color_333"
+                android:textSize="15sp"
+                app:layout_constraintLeft_toLeftOf="@id/tv_one"
+                app:layout_constraintRight_toRightOf="@id/tv_one"
+                app:layout_constraintTop_toBottomOf="@+id/tv_one" />
+
+            <TextView
+                android:id="@+id/tv_xscx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/ic_service_xscx"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:text="限行查询"
+                android:textColor="@color/color_333"
+                android:textSize="15sp"
+                android:visibility="visible"
+                app:layout_constraintLeft_toLeftOf="@id/tv_two"
+                app:layout_constraintRight_toRightOf="@id/tv_two"
+                app:layout_constraintTop_toTopOf="@+id/tv_four" />
+
+            <TextView
+                android:id="@+id/tv_gjcx"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="12dp"
+                android:drawableTop="@mipmap/ic_service_gjcx"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:text="公交查询"
+                android:textColor="@color/color_333"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@id/tv_three"
+                android:visibility="visible"
+                app:layout_constraintRight_toRightOf="@id/tv_three"
+                app:layout_constraintTop_toTopOf="@+id/tv_four" />
+
+            <TextView
+                android:id="@+id/tv_gsk"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:drawableTop="@mipmap/ic_service_gsk"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:text="高速口"
+                android:textColor="@color/color_333"
+                android:textSize="15sp"
+                app:layout_constraintLeft_toLeftOf="@id/tv_one"
+                app:layout_constraintRight_toRightOf="@id/tv_one"
+                app:layout_constraintTop_toBottomOf="@+id/tv_four" />
+
+            <TextView
+                android:id="@+id/tv_five"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/ic_service_dszb"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:text="电视直播"
+                android:textColor="@color/color_333"
+                android:textSize="15sp"
+                android:visibility="gone"
+                app:layout_constraintLeft_toLeftOf="@id/tv_two"
+                app:layout_constraintRight_toRightOf="@id/tv_two"
+                app:layout_constraintTop_toTopOf="@id/tv_four" />
+
+            <TextView
+                android:id="@+id/tv_six"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/ic_service_hcpyd"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:text="火车票预订"
+                android:textColor="@color/color_333"
+                android:textSize="15sp"
+                android:visibility="gone"
+                app:layout_constraintLeft_toLeftOf="@id/tv_three"
+                app:layout_constraintRight_toRightOf="@id/tv_three"
+                app:layout_constraintTop_toTopOf="@+id/tv_four" />
+
+
+            <View
+                android:id="@+id/view_one"
+                android:layout_width="1px"
+                android:layout_height="45dp"
+                android:layout_marginTop="14dp"
+                android:background="@color/color_e5e5e5"
+                app:layout_constraintLeft_toLeftOf="@+id/tv_one"
+                app:layout_constraintRight_toRightOf="@+id/tv_two"
+                app:layout_constraintTop_toTopOf="@+id/tv_one" />
+
+            <View
+                android:id="@+id/view_two"
+                android:layout_width="1px"
+                android:layout_height="45dp"
+                android:layout_marginTop="14dp"
+                android:background="@color/color_e5e5e5"
+                app:layout_constraintLeft_toLeftOf="@+id/tv_two"
+                app:layout_constraintRight_toRightOf="@+id/tv_three"
+                app:layout_constraintTop_toTopOf="@+id/tv_one" />
+
+            <View
+                android:id="@+id/view_wzcx_xscx"
+                android:layout_width="1px"
+                android:layout_height="45dp"
+                android:layout_marginTop="14dp"
+                android:background="@color/color_e5e5e5"
+                app:layout_constraintLeft_toLeftOf="@+id/tv_one"
+                app:layout_constraintRight_toRightOf="@+id/tv_two"
+                app:layout_constraintTop_toTopOf="@+id/tv_four" />
+
+            <View
+                android:id="@+id/view_xscx_gjcx"
+                android:layout_width="1px"
+                android:layout_height="45dp"
+                android:layout_marginTop="14dp"
+                android:background="@color/color_e5e5e5"
+                app:layout_constraintLeft_toLeftOf="@+id/tv_two"
+                app:layout_constraintRight_toRightOf="@+id/tv_three"
+                app:layout_constraintTop_toTopOf="@+id/tv_four" />
+
+            <View
+                android:id="@+id/view_vertical_one"
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/color_f8f8f8"
+                app:layout_constraintTop_toBottomOf="@id/tv_gsk" />
+
+            <TextView
+                android:id="@+id/tv_rcfw_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="14dp"
+                android:text="日常服务"
+                android:textColor="@color/color_333"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_vertical_one" />
+
+            <TextView
+                android:id="@+id/tv_seven"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:drawableTop="@mipmap/ic_service_tqyb"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:text="天气预报"
+                android:textColor="@color/color_333"
+                android:textSize="15sp"
+                app:layout_constraintLeft_toLeftOf="@id/tv_one"
+                app:layout_constraintRight_toRightOf="@id/tv_one"
+                app:layout_constraintTop_toBottomOf="@+id/tv_rcfw_lable" />
+
+            <TextView
+                android:id="@+id/tv_eight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/ic_service_kdcx"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:text="快递查询"
+                android:textColor="@color/color_333"
+                android:textSize="15sp"
+                android:visibility="visible"
+                app:layout_constraintLeft_toLeftOf="@id/tv_two"
+                app:layout_constraintRight_toRightOf="@id/tv_two"
+                app:layout_constraintTop_toTopOf="@+id/tv_seven" />
+
+            <View
+                android:id="@+id/view_three"
+                android:layout_width="1px"
+                android:layout_height="45dp"
+                android:layout_marginTop="14dp"
+                android:background="@color/color_e5e5e5"
+                app:layout_constraintLeft_toLeftOf="@+id/tv_one"
+                app:layout_constraintRight_toRightOf="@+id/tv_two"
+                app:layout_constraintTop_toTopOf="@+id/tv_seven" />
+
+            <View
+                android:id="@+id/view_dszb_tgb"
+                android:layout_width="1px"
+                android:layout_height="45dp"
+                android:layout_marginTop="14dp"
+                android:background="@color/color_e5e5e5"
+                app:layout_constraintLeft_toLeftOf="@+id/tv_one"
+                app:layout_constraintRight_toRightOf="@+id/tv_two"
+                app:layout_constraintTop_toTopOf="@+id/tv_nine" />
+
+            <View
+                android:id="@+id/view_tgb"
+                android:layout_width="1px"
+                android:layout_height="45dp"
+                android:layout_marginTop="14dp"
+                android:background="@color/color_e5e5e5"
+                app:layout_constraintLeft_toLeftOf="@+id/tv_two"
+                app:layout_constraintRight_toRightOf="@+id/tv_three"
+                app:layout_constraintTop_toTopOf="@+id/tv_nine" />
+
+            <View
+                android:id="@+id/view_vertical_two"
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/color_f8f8f8"
+                app:layout_constraintTop_toBottomOf="@id/tv_seven" />
+
+            <TextView
+                android:id="@+id/tv_video_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="14dp"
+                android:text="视频广播"
+                android:textColor="@color/color_333"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_vertical_two" />
+
+            <TextView
+                android:id="@+id/tv_nine"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:drawableTop="@mipmap/ic_service_dszb"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:text="电视直播"
+                android:textColor="@color/color_333"
+                android:textSize="15sp"
+                app:layout_constraintLeft_toLeftOf="@id/tv_one"
+                app:layout_constraintRight_toRightOf="@id/tv_one"
+                app:layout_constraintTop_toBottomOf="@+id/tv_video_lable" />
+
+            <TextView
+                android:id="@+id/tv_tgb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/ic_service_tgb"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:text="听广播"
+                android:textColor="@color/color_333"
+                android:textSize="15sp"
+                android:visibility="visible"
+                app:layout_constraintLeft_toLeftOf="@id/tv_two"
+                app:layout_constraintRight_toRightOf="@id/tv_two"
+                app:layout_constraintTop_toTopOf="@+id/tv_nine" />
+
+            <TextView
+                android:id="@+id/tv_spdb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="12dp"
+                android:drawableTop="@mipmap/ic_service_spdb"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:text="视频点播"
+                android:textColor="@color/color_333"
+                android:textSize="15sp"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="@id/tv_three"
+                app:layout_constraintRight_toRightOf="@id/tv_three"
+                app:layout_constraintTop_toTopOf="@+id/tv_nine" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>

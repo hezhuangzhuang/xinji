@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.zxwl.frame">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" /> <!-- 悬浮框 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" /> <!-- 保持屏幕亮起权限 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" /> <!-- 安装App的功能 -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" /> <!-- <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/> -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <!--前后台的切换-->
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="android.permission.GET_TOP_ACTIVITY_INFO"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+
+    <application
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup">
+        <service
+            android:name=".service.LoginStateWatchService"
+            android:enabled="true"
+            android:exported="true"></service>
+
+        <service
+            android:name=".service.AudioStateWatchService"
+            android:enabled="true"
+            android:exported="true"></service>
+
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.4" />
+        <!-- <meta-data -->
+        <!-- android:name="design_width_in_dp" -->
+        <!-- android:value="375"/> -->
+        <receiver
+            android:name=".receiver.CallReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".receiver.HeadsetReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.HEADSET_PLUG"
+                    android:enabled="true" />
+            </intent-filter>
+        </receiver> <!-- 去电界面 -->
+        <activity
+            android:name=".activity.CallOutActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.call_out_activity4gh" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.sdkdemo" />
+            </intent-filter>
+        </activity> <!-- android:excludeFromRecents="true" -->
+        <!-- android:taskAffinity="" -->
+        <!-- android:launchMode="singleInstance" -->
+        <!-- 来电界面 -->
+        <activity
+            android:name=".activity.CallerIDActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.call_in_activity4gh" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.sdkdemo" />
+            </intent-filter>
+        </activity> <!-- 会议界面 -->
+        <activity
+            android:name=".activity.VideoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape"
+            android:hardwareAccelerated="true"
+            android:theme="@style/FullScreen">
+            <intent-filter>
+                <!-- <action android:name="android.intent.action.conf_manager_activity"/> -->
+                <action android:name="android.intent.action.video_activity4gh" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.sdkdemo" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.AudioActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.audio_activity4gh" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.sdkdemo" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.VideoConfActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTask"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="landscape"
+            android:theme="@style/FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.conf_video_activity4gh" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.sdkdemo" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LoadingActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.loading_activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.sdkdemo" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LoginDialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/dialogActivitystyle" />
+
+        <receiver
+            android:name=".receiver.NetWorkChangReceiver"
+            android:enabled="true"
+            android:exported="true" />
+    </application>
+
+</manifest>

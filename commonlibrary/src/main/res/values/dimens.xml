@@ -1,0 +1,97 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <!--Global configuration dimen-->
+    <dimen name="action_bar_default_height">48dp</dimen>
+    <dimen name="default_general_margin">10dp</dimen>
+
+    <!--weekday bangumi layout size-->
+
+    <!--load more layout size-->
+
+    <!--banner height size-->
+
+    <!--video item common strip size-->
+
+
+    <!--video card size-->
+
+
+    <!--search size-->
+
+
+    <!--game center size-->
+
+
+    <!--home live size-->
+
+
+    <!--home recommend size-->
+
+    <!--bangumi index size-->
+
+    <!--bangumi recomend size-->
+
+
+    <!--splash size-->
+
+    <!--video details size-->
+
+
+    <!--discover layout size-->
+
+
+    <!--more layout size-->
+
+
+    <!--offline download size-->
+
+
+    <!--common text size-->
+    <dimen name="default_small_text_size">14sp</dimen>
+
+    <!--tab layout size-->
+    <dimen name="tab_indicator_corner_tiny_radius">1dp</dimen>
+    <dimen name="tab_indicator_center_width">30dp</dimen>
+
+
+    <!--circle head portrait size-->
+
+    <!-- Common resources -->
+
+    <!-- CircleProgressView -->
+
+    <!-- UserTagView -->
+
+    <!-- Card -->
+
+    <!-- List -->
+
+    <!-- Navigation -->
+
+    <!-- Android Design Support Library -->
+
+    <!-- Layouts' special resources -->
+
+    <!-- activity_user_info.xml -->
+
+
+    <!-- activity_sp_view.xml -->
+
+    <!-- video player -->
+
+
+    <!--home focus size-->
+
+
+    <!--bangumi details size-->
+
+
+    <!--user details size-->
+
+
+    <!--chase bangumi size-->
+    <dimen name="tab_bar_item_padding">15dp</dimen>
+
+</resources>

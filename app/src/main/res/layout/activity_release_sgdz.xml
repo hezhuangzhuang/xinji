@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ReleaseSgdzActivity">
+
+    <include
+        android:id="@+id/rl_include"
+        layout="@layout/common_title_layout_old" />
+
+    <TextView
+        android:id="@+id/tv_name_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center"
+        android:text="党员姓名"
+        android:maxLength="20"
+        android:textColor="@color/color_999"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rl_include" />
+
+    <com.zxwl.xinji.widget.ContainsEmojiEditText
+        android:id="@+id/et_name"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:background="@null"
+        android:gravity="right|center_vertical"
+        android:hint="请输入姓名"
+        android:singleLine="true"
+        android:textColor="@color/color_333"
+        android:textColorHint="@color/color_999"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_name_lable"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/tv_name_lable"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rl_include"
+        app:layout_constraintTop_toTopOf="@id/tv_name_lable" />
+
+    <View
+        android:id="@+id/view_one"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/color_eee"
+        app:layout_constraintTop_toBottomOf="@id/tv_name_lable" />
+
+    <TextView
+        android:id="@+id/tv_gwsd_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center"
+        android:text="岗位设定"
+        android:textColor="@color/color_999"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_one" />
+
+    <TextView
+        android:id="@+id/tv_gwsd"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:background="@null"
+        android:drawableRight="@mipmap/ic_array_right"
+        android:drawablePadding="6dp"
+        android:gravity="right|center_vertical"
+        android:singleLine="true"
+        android:text="请选择岗位设定"
+        android:textColor="@color/color_333"
+        android:textColorHint="@color/color_999"
+        android:textSize="15sp"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/tv_name_lable"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_one" />
+
+    <View
+        android:id="@+id/view_two"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingBottom="15dp"
+        android:background="@color/color_eee"
+        app:layout_constraintTop_toBottomOf="@id/tv_gwsd_lable" />
+
+    <TextView
+        android:id="@+id/tv_lxh_lable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:text="联系户名单"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/color_333"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/view_two" />
+
+    <com.zxwl.xinji.widget.ContainsEmojiEditText
+        android:id="@+id/et_lxh"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="请输入联系户名单"
+        android:padding="15dp"
+        android:textColor="@color/color_333"
+        android:textColorHint="@color/color_999"
+        android:textSize="15sp"
+        android:maxLength="100"
+        app:layout_constraintTop_toBottomOf="@id/tv_lxh_lable"
+        tools:text="请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单" />
+
+    <View
+        android:id="@+id/view_three"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/color_eee"
+        app:layout_constraintTop_toBottomOf="@id/et_lxh" />
+
+    <TextView
+        android:id="@+id/tv_remarks_lable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="15dp"
+        android:text="备注"
+        android:textColor="@color/color_333"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/view_three" />
+
+    <com.zxwl.xinji.widget.ContainsEmojiEditText
+        android:id="@+id/et_remarks"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="请输入"
+        android:maxLength="500"
+        android:padding="15dp"
+        android:textColor="@color/color_333"
+        android:textColorHint="@color/color_999"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_remarks_lable"
+        tools:text="请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单请输入联系户名单" />
+
+</android.support.constraint.ConstraintLayout>

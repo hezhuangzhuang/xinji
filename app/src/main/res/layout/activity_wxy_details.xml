@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_layout_old" />
+
+    <ScrollView
+        android:scrollbars="none"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingTop="18dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:lineSpacingExtra="5dp"
+                android:maxLines="2"
+                android:textColor="@color/color_333"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="以习近平同志为核心的党中央坚定不移推进全面深化改革" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_title"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="6dp"
+                android:textColor="@color/color_AAB4BA"
+                android:textSize="13sp"
+                tools:text="2018-10-10" />
+
+            <TextView
+                android:id="@+id/tv_website"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_title"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@id/tv_time"
+                android:singleLine="true"
+                android:textColor="@color/color_333"
+                android:textSize="13sp"
+                tools:text="人民网" />
+
+            <FrameLayout
+                android:id="@+id/fl_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_website"
+                android:layout_marginTop="12dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_conf_bg_e85641"
+                    android:orientation="vertical"
+                    android:paddingBottom="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/color_ffe85641"
+                        android:paddingLeft="25dp"
+                        android:paddingTop="4dp"
+                        android:paddingRight="25dp"
+                        android:paddingBottom="4dp"
+                        android:text="心愿信息"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11dp"
+                        android:layout_marginTop="15dp"
+                        android:textColor="@color/color_999"
+                        android:text="一、姓名" />
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/color_333"
+                        tools:text="活动时间" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11dp"
+                        android:layout_marginTop="15dp"
+                        android:textColor="@color/color_999"
+                        android:text="二、联系方式" />
+
+                    <TextView
+                        android:id="@+id/tv_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/color_333"
+                        tools:text="活动地点" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11dp"
+                        android:layout_marginTop="15dp"
+                        android:textColor="@color/color_999"
+                        android:text="三、时间" />
+
+                    <TextView
+                        android:id="@+id/tv_activity_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11dp"
+                        android:layout_marginTop="10dp"
+                        android:lineSpacingExtra="3dp"
+                        android:textColor="@color/color_333"
+                        tools:text="活动时间" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11dp"
+                        android:layout_marginTop="15dp"
+                        android:textColor="@color/color_999"
+                        android:text="四、地区" />
+
+                    <TextView
+                        android:id="@+id/tv_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/color_333"
+                        tools:text="活动时间" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/tv_claim_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:visibility="gone"
+                    android:layout_margin="20dp"
+                    android:src="@mipmap/ic_claim_status" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_claim_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fl_status"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_conf_bg"
+                android:orientation="vertical"
+                android:paddingBottom="12dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/color_11cf8f"
+                    android:paddingLeft="25dp"
+                    android:paddingTop="4dp"
+                    android:paddingRight="25dp"
+                    android:paddingBottom="4dp"
+                    android:text="认领信息"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/color_999"
+                    android:text="一、姓名" />
+
+                <TextView
+                    android:id="@+id/tv_claim_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/color_333" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/color_999"
+                    android:text="二、联系方式" />
+
+                <TextView
+                    android:id="@+id/tv_claim_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="10dp"
+                    android:lineSpacingExtra="3dp"
+                    android:textColor="@color/color_333"
+                    tools:text="活动时间" />
+            </LinearLayout>
+
+            <WebView
+                android:visibility="visible"
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_claim_info"
+                android:layout_marginTop="15dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_claim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_content"
+                android:background="@drawable/shape_bt_login_bg"
+                android:gravity="center"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="30dp"
+                android:text="认领心愿"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</LinearLayout>

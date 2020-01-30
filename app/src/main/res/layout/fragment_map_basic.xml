@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.MapBasicFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingTop="26dp"
+            android:paddingRight="15dp">
+
+            <FrameLayout
+                android:id="@+id/fl_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/shape_dialog_fe9d03_bg"
+                android:gravity="center"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp">
+
+                <TextView
+                    android:id="@+id/tv_edit_lable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@mipmap/ic_unit_edit"
+                    android:drawablePadding="9dp"
+                    android:text="编辑单位简介"
+                    android:textColor="@color/color_fe9d03" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_basic_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="基本简介"
+                android:visibility="gone"
+                android:textColor="@color/color_333"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_basic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:lineSpacingExtra="6dp"
+                android:textColor="@color/color_666"
+                android:textSize="15sp"
+                tools:text="河北省石家王山口位于小辛庄驻地东北2.6公里处。地势平平坦，属壤土质。均为汉族。耕地5125亩。为王山口大队驻地。据查，清康熙" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_select"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:overScrollMode="never" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

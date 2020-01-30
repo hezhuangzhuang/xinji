@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.DocumentDetailsActivity">
+
+    <include layout="@layout/common_title_layout_old" />
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="4dp"
+                android:padding="17dp"
+                android:textColor="@color/color_333"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                tools:text="中共中央印发《关于加强和改进城市基层党的建设工作的意见》" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="17dp"
+                android:background="@color/color_eee" />
+
+            <WebView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="6dp"
+                android:padding="17dp"
+                android:textColor="@color/color_333"
+                android:textSize="20sp"
+                tools:text="中共中央印发《关于加强和改进城市基层党的建设工作的意见关于加强和改进城市基层党的建设工作的意见关于加强和改进城市基层党的建设工作的意见》" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

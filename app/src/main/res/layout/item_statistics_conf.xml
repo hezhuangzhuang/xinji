@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingLeft="15dp"
+    android:paddingTop="30dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="10dp">
+
+    <!--item_2019年统计_三会一课-->
+
+    <ImageView
+        android:id="@+id/iv_array"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_name"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="13dp"
+        android:src="@mipmap/ic_array_right"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_333"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:text="党支部" />
+
+    <TextView
+        android:id="@+id/tv_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/progress"
+        android:textColor="@color/color_666"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:text="89" />
+
+    <TextView
+        android:id="@+id/tv_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_FF9D04"
+        android:textSize="14sp"
+        android:layout_marginRight="13dp"
+        android:layout_toLeftOf="@id/tv_number"
+        android:textStyle="bold" />
+
+    <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_below="@id/tv_name"
+        android:layout_marginTop="6dp"
+        android:layout_toLeftOf="@id/iv_array"
+        app:rcBackgroundColor="@color/color_eee"
+        app:rcBackgroundPadding="0dp"
+        app:rcProgressColor="@color/color_fbc228"
+        app:rcRadius="4dp" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progress"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/color_999"
+        android:textSize="12sp"
+        tools:text="党员大会 20" />
+</RelativeLayout>

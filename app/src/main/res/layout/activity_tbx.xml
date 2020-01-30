@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_web_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/webView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ECF0F2"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/btnBack1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2.5dp"
+            android:layout_weight="1"
+            android:background="#ECF0F2"
+            android:padding="10dp"
+            android:src="@mipmap/general_back_icon" />
+
+        <ImageButton
+            android:id="@+id/btnForward1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2.5dp"
+            android:layout_weight="1"
+            android:background="#ECF0F2"
+            android:padding="10dp"
+            android:src="@mipmap/general_back_icon" />
+
+        <ImageButton
+            android:id="@+id/btnMore"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2.0dp"
+            android:layout_weight="1"
+            android:background="#ECF0F2"
+            android:padding="10dp"
+            android:src="@mipmap/general_back_icon" />
+
+        <ImageButton
+            android:id="@+id/btnHome1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2.5dp"
+            android:layout_weight="1"
+            android:background="#ECF0F2"
+            android:padding="10dp"
+            android:src="@mipmap/general_back_icon" />
+
+        <ImageButton
+            android:id="@+id/btnExit1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2.5dp"
+            android:layout_weight="1"
+            android:background="#ECF0F2"
+            android:padding="10dp"
+            android:src="@mipmap/general_back_icon" />
+    </LinearLayout>
+
+</LinearLayout>

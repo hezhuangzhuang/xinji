@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingTop="18dp"
+        android:paddingBottom="12dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:lineSpacingExtra="5dp"
+            android:maxLines="2"
+            android:paddingRight="18dp"
+            android:textColor="@color/color_333"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="以习近平同志为核心的党中央坚定不移推进全面深化改革" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="6dp"
+            android:paddingRight="18dp"
+            android:textColor="@color/color_AAB4BA"
+            android:textSize="13sp"
+            tools:text="2018-10-10" />
+
+        <TextView
+            android:id="@+id/tv_website"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/tv_time"
+            android:singleLine="true"
+            android:textColor="@color/color_333"
+            android:textSize="13sp"
+            tools:text="人民网" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:layout_alignParentRight="true"
+            android:text="展开"
+            android:textColor="@color/color_AAB4BA"
+            android:textSize="13sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ll_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_website"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/shape_conf_bg"
+            android:orientation="vertical"
+            android:paddingBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/color_ffe85641"
+                android:paddingLeft="25dp"
+                android:paddingTop="4dp"
+                android:paddingRight="25dp"
+                android:paddingBottom="4dp"
+                android:text="相关信息"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_personnel_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/color_999"
+                tools:text="1" />
+
+            <TextView
+                android:id="@+id/tv_personnel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/color_333"
+                tools:text="活动时间" />
+
+            <TextView
+                android:id="@+id/tv_address_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/color_999"
+                tools:text="2" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/color_333"
+                tools:text="活动地点" />
+
+            <TextView
+                android:id="@+id/tv_three_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/color_999"
+                tools:text="3" />
+
+            <TextView
+                android:id="@+id/tv_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="10dp"
+                android:lineSpacingExtra="3dp"
+                android:textColor="@color/color_333"
+                tools:text="活动时间" />
+
+            <TextView
+                android:id="@+id/tv_four_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/color_999"
+                tools:text="4" />
+
+            <TextView
+                android:id="@+id/tv_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/color_333"
+                tools:text="活动时间" />
+
+            <TextView
+                android:id="@+id/tv_five_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/color_999"
+                tools:text="5" />
+
+            <TextView
+                android:id="@+id/tv_five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/color_333"
+                tools:text="活动时间" />
+
+            <TextView
+                android:id="@+id/tv_six_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/color_999"
+                tools:text="6" />
+
+            <TextView
+                android:id="@+id/tv_six"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/color_333"
+                tools:text="活动时间" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <!--    <RelativeLayout-->
+    <!--        android:id="@+id/rl_address"-->
+    <!--        android:layout_marginTop="12dp"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:background="@color/white"-->
+    <!--        android:orientation="vertical"-->
+    <!--        android:paddingTop="12dp"-->
+    <!--        android:paddingBottom="12dp"-->
+    <!--        >-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/tv_address"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_alignParentLeft="true"-->
+    <!--            android:paddingLeft="18dp"-->
+    <!--            android:paddingRight="18dp"-->
+    <!--            android:textColor="@color/color_191D24"-->
+    <!--            android:textSize="13sp"-->
+    <!--            tools:text="人民网再见啊没回是打算大所大所大所所大所大多撒所大大所大所大所多阿打算打算大大大大大大是"/>-->
+
+    <!--        <TextView-->
+    <!--            android:layout_marginTop="10dp"-->
+    <!--            android:layout_below="@id/tv_address"-->
+    <!--            android:id="@+id/tv_personnel"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_alignParentLeft="true"-->
+    <!--            android:paddingLeft="18dp"-->
+    <!--            android:paddingRight="18dp"-->
+    <!--            android:textColor="@color/color_191D24"-->
+    <!--            android:textSize="13sp"-->
+    <!--            android:lineSpacingExtra="3dp"-->
+    <!--            tools:text="人员:再见啊没回是打算大所大所大所所大所大多撒所大大所大所大所多阿打算打算大大大大大大是"/>-->
+    <!--    </RelativeLayout>-->
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="6dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="@color/color_f9f9f9" />
+
+    <LinearLayout
+        android:id="@+id/ll_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="18dp">
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/color_E42417" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="评论"
+            android:textColor="@color/color_191D24"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_comment_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:textColor="@color/color_999"
+            android:visibility="visible"
+            tools:text="(96)" />
+    </LinearLayout>
+
+</LinearLayout>

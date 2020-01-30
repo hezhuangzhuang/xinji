@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- CircleImageView -->
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="border_overlay" format="boolean" />
+    </declare-styleable>
+
+    <!--进度条-->
+    <declare-styleable name="NumberProgressBar">
+        <attr name="progress_current" format="integer"/>
+        <attr name="progress_max" format="integer"/>
+        <attr name="progress_unreached_color" format="color"/>
+        <attr name="progress_reached_color" format="color"/>
+        <attr name="progress_reached_bar_height" format="dimension"/>
+        <attr name="progress_unreached_bar_height" format="dimension"/>
+        <attr name="progress_text_size" format="dimension"/>
+        <attr name="progress_text_color" format="color"/>
+        <attr name="progress_text_offset" format="dimension"/>
+        <attr name="progress_text_visibility" format="enum">
+            <enum name="visible" value="0"/>
+            <enum name="invisible" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="Themes">
+        <attr name="numberProgressBarStyle" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="RichTextEditor" >
+        <attr name="rt_editor_image_height" format="integer" />
+        <attr name="rt_editor_image_bottom" format="integer" />
+        <attr name="rt_editor_text_init_hint" format="string" />
+        <attr name="rt_editor_text_size" format="dimension" />
+        <attr name="rt_editor_text_color" format="color" />
+        <attr name="rt_editor_text_line_space" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="RichTextView" >
+        <attr name="rt_view_image_height" format="integer" />
+        <attr name="rt_view_image_bottom" format="integer" />
+        <attr name="rt_view_text_init_hint" format="string" />
+        <attr name="rt_view_text_size" format="dimension" />
+        <attr name="rt_view_text_color" format="color" />
+        <attr name="rt_view_text_line_space" format="dimension" />
+    </declare-styleable>
+
+</resources>

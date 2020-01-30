@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingDefaultResource">
+
+    <View
+        android:id="@+id/view_space"
+        android:layout_width="wrap_content"
+        android:layout_height="6dp"
+        android:background="@color/color_eee" />
+
+    <ImageView
+        android:id="@+id/iv_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingLeft="13dp"
+        android:visibility="visible"
+        android:src="@mipmap/ic_study_hot" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:textSize="16sp"
+        android:paddingLeft="13dp"
+        android:paddingTop="16dp"
+        android:textColor="@color/color_333"
+        tools:text="三会一课"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_more"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/view_space"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="13dp"
+        android:drawableRight="@mipmap/ic_service_more"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:text="更多"
+        android:textColor="@color/color_FF9D04" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignBottom="@id/tv_more"
+        android:background="@color/color_eee" />
+
+</RelativeLayout>

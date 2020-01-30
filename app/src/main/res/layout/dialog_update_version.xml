@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_top_bg"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@mipmap/ic_update_version_top"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-2dp"
+        android:background="@drawable/shape_bottom_radius_bg"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="23dp"
+            android:text="尊敬的党员同志:"
+            android:textColor="@color/color_333"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_title"
+            android:layout_below="@id/tv_title"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="14dp"
+            android:lineSpacingExtra="6dp"
+            android:textColor="#666"
+            android:textSize="15sp"
+            tools:text="升级后新增了以下模块：\n
+        1.填充字段填充字段填充字段填充\n
+        2.填充字段填充字段填充字段填充\n
+        3.填充字段填充字段填充字段填充"/>
+
+        <android.support.v4.widget.Space
+            android:id="@+id/center_space"
+            android:layout_width="10dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/tv_msg"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@id/versionchecklib_version_dialog_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_title"
+            android:layout_below="@id/center_space"
+            android:layout_toLeftOf="@id/center_space"
+            android:background="@drawable/shape_update_cancle_bg"
+            android:gravity="center"
+            android:padding="14dp"
+            android:text="取消"/>
+
+        <!--        <Button-->
+        <!--            android:id="@id/versionchecklib_version_dialog_cancel"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_alignParentLeft="true"-->
+        <!--            android:layout_marginLeft="20dp"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:padding="14dp"-->
+        <!--            android:layout_toLeftOf="@id/center_space"-->
+        <!--            android:background="@drawable/shape_update_cancle_bg"-->
+        <!--            android:text="以后再说"-->
+        <!--            android:textColor="@color/color_e85541" />-->
+
+        <Button
+            android:id="@id/versionchecklib_version_dialog_commit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/center_space"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@id/center_space"
+            android:background="@drawable/shape_bt_login_bg"
+            android:padding="14dp"
+            android:text="立即更新"
+            android:textColor="@android:color/white"/>
+    </RelativeLayout>
+</LinearLayout>

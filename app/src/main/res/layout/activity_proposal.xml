@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_fff5f5f5"
+    android:orientation="vertical"
+    tools:context="com.zxwl.xinji.activity.ProposalActivity">
+
+    <include layout="@layout/common_title_layout_old" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_hint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="15dp"
+                    android:text="建议反馈"
+                    android:textColor="@color/color_313236"
+                    android:textSize="15sp" />
+
+                <com.zxwl.xinji.widget.ContainsEmojiEditText
+                    android:id="@+id/et_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="18dp"
+                    android:background="@drawable/shape_round_f6f6f6_5dp"
+                    android:gravity="top|left"
+                    android:hint="请输入反馈内容"
+                    android:lineSpacingExtra="5dp"
+                    android:maxLength="500"
+                    android:padding="6dp"
+                    android:textColor="@color/color_333"
+                    android:textColorHint="@color/color_999"
+                    android:textSize="15sp"
+                    tools:text="这是我的反馈内容，以下都是重复的不用看了这是我的反馈内容，以下都是重复的不用看了这是我的反馈内容，以下都是重复的不用看了这是我的反馈内容，以下都是重复的不用看了这是我的反馈内容，以下都是重复的不用看了这是我的反馈内容，以下都是重复的不用看了这是我的反馈内容，以下都是重复的不用看了这是我的反馈内容，以下都是重复的不用看了这是我的反馈内容，以下都是重复的不用看了这是我的反馈内容，以下都是重复的不用看了" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="165dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_phone_lable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="30dp"
+                    android:text="手机"
+                    android:textColor="@color/color_999"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/et_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_toRightOf="@id/tv_phone_lable"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:hint="请输入手机号"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:singleLine="true"
+                    android:textColor="@color/color_333"
+                    android:textColorHint="@color/color_999"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@id/tv_phone_lable"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@color/color_eee" />
+
+                <TextView
+                    android:id="@+id/tv_other_lable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_below="@id/tv_phone_lable"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="30dp"
+                    android:text="其他"
+                    android:textColor="@color/color_999"
+                    android:textSize="15sp" />
+
+                <com.zxwl.xinji.widget.ContainsEmojiEditText
+                    android:id="@+id/et_other"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_below="@id/tv_phone_lable"
+                    android:layout_toRightOf="@id/tv_phone_lable"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:hint="其他联系方式(邮箱,微信,QQ)"
+                    android:singleLine="true"
+                    android:textColor="@color/color_333"
+                    android:textColorHint="@color/color_999"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@id/et_other"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@color/color_eee" />
+
+                <TextView
+                    android:id="@+id/tv_name_lable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_below="@id/tv_other_lable"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="30dp"
+                    android:text="姓名"
+                    android:textColor="@color/color_999"
+                    android:textSize="15sp" />
+
+                <com.zxwl.xinji.widget.ContainsEmojiEditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_below="@id/tv_other_lable"
+                    android:layout_toRightOf="@id/tv_phone_lable"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:hint="请输入姓名"
+                    android:singleLine="true"
+                    android:textColor="@color/color_333"
+                    android:textColorHint="@color/color_999"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/bt_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:padding="12dp"
+                android:background="@drawable/shape_bt_login_bg"
+                android:text="提交反馈"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

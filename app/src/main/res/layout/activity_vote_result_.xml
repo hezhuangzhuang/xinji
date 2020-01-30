@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zxwl.xinji.activity.VoteResultActivity">
+
+<!--    <android.support.v4.widget.NestedScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--        <LinearLayout-->
+<!--            android:orientation="vertical"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+<!--            <RelativeLayout-->
+<!--                android:background="@color/white"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/iv_top_bg"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:scaleType="centerCrop"-->
+<!--                    android:src="@mipmap/ic_vote_result"/>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_below="@id/iv_top_bg"-->
+<!--                    android:id="@+id/ll_one"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:layout_width="119dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="-25dp"-->
+<!--                    android:background="@drawable/layer_government_bg"-->
+<!--                    android:gravity="center_horizontal"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:paddingBottom="30dp"-->
+<!--                    android:paddingLeft="20dp"-->
+<!--                    android:paddingRight="20dp"-->
+<!--                    >-->
+
+<!--                    <FrameLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="0dp">-->
+
+<!--                        <com.zxwl.commonlibrary.widget.CircleImageView-->
+<!--                            android:id="@+id/iv_one_head"-->
+<!--                            android:layout_width="65dp"-->
+<!--                            android:layout_height="65dp"-->
+<!--                            android:layout_gravity="center_horizontal"-->
+<!--                            android:layout_marginTop="16dp"-->
+<!--                            tools:src="@color/color_333"/>-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="right|top"-->
+<!--                            android:layout_marginRight="6dp"-->
+<!--                            android:src="@mipmap/ic_vote_one"/>-->
+<!--                    </FrameLayout>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tv_one_name"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="12dp"-->
+<!--                        android:textColor="@color/color_333"-->
+<!--                        android:textSize="15sp"-->
+<!--                        tools:text="王建国"/>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tv_one_vote_number"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:textColor="@color/color_999"-->
+<!--                        android:textSize="15sp"-->
+<!--                        tools:text="510票"/>-->
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_below="@id/iv_top_bg"-->
+<!--                    android:id="@+id/ll_two"-->
+<!--                    android:layout_width="128dp"-->
+<!--                    android:layout_alignParentLeft="true"-->
+<!--                    android:layout_toLeftOf="@id/ll_one"-->
+<!--                    android:background="@color/white"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:gravity="center_horizontal"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:paddingBottom="30dp"-->
+<!--                    android:paddingTop="16dp">-->
+
+<!--                    <FrameLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="60dp">-->
+
+<!--                        <com.zxwl.commonlibrary.widget.CircleImageView-->
+<!--                            android:id="@+id/iv_two_head"-->
+<!--                            android:layout_width="55dp"-->
+<!--                            android:layout_height="55dp"-->
+<!--                            tools:src="@color/color_333"/>-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="right|bottom"-->
+<!--                            android:src="@mipmap/ic_vote_two"/>-->
+
+<!--                    </FrameLayout>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tv_two_name"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:textColor="@color/color_333"-->
+<!--                        android:textSize="15sp"-->
+<!--                        tools:text="王建国"/>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tv_two_vote_number"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:textColor="@color/color_999"-->
+<!--                        android:textSize="15sp"-->
+<!--                        tools:text="510票"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_below="@id/iv_top_bg"-->
+<!--                    android:background="@color/white"-->
+<!--                    android:layout_toRightOf="@id/ll_one"-->
+<!--                    android:layout_alignParentRight="true"-->
+<!--                    android:layout_width="128dp"-->
+<!--                    android:id="@+id/ll_three"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:gravity="center_horizontal"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:paddingBottom="30dp"-->
+<!--                    android:paddingTop="16dp">-->
+
+<!--                    <FrameLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="60dp">-->
+
+<!--                        <com.zxwl.commonlibrary.widget.CircleImageView-->
+<!--                            android:id="@+id/iv_three_head"-->
+<!--                            android:layout_width="55dp"-->
+<!--                            android:layout_height="55dp"-->
+<!--                            tools:src="@color/color_333"/>-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="right|bottom"-->
+<!--                            android:src="@mipmap/ic_vote_three"/>-->
+<!--                    </FrameLayout>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tv_three_name"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:textColor="@color/color_333"-->
+<!--                        android:textSize="15sp"-->
+<!--                        tools:text="王建国"/>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tv_three_vote_number"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:textColor="@color/color_999"-->
+<!--                        android:textSize="15sp"-->
+<!--                        tools:text="510票"/>-->
+<!--                </LinearLayout>-->
+
+<!--            </RelativeLayout>-->
+
+<!--        </LinearLayout>-->
+
+<!--    </android.support.v4.widget.NestedScrollView>-->
+
+    <include layout="@layout/common_title_layout_old"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_list"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_vote_ranking"/>
+
+</LinearLayout>

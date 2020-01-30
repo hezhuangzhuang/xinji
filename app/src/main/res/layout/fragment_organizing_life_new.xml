@@ -1,0 +1,142 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zxwl.xinji.fragment.OrganizingLifeFragment">
+
+    <FrameLayout
+        android:id="@+id/fl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@mipmap/ic_life_top_bg" />
+
+        <RelativeLayout
+            android:id="@+id/rl_top_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp">
+
+            <!-- android:background="@color/color_E64A3A"-->
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:id="@+id/iv_back_operate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:padding="12dp"
+                        android:src="@mipmap/ic_top_logo"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/tv_top_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:drawableLeft="@mipmap/ic_map_party_logo"
+                        android:drawablePadding="6dp"
+                        android:gravity="center"
+                        android:text="辛集党建"
+                        android:textColor="@color/color_fdcd37"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/iv_left_down"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:src="@mipmap/ic_left_down"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_right_operate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right|center_vertical"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="12dp"
+                    android:paddingBottom="10dp"
+                    android:singleLine="true"
+                    android:text="我的"
+                    android:textColor="@color/color_FED803"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_top_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:text="组织服务"
+                    android:textColor="@color/color_fcd967"
+                    android:textSize="20sp" />
+            </FrameLayout>
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_ztdr"
+            style="@style/organizingLifeTextStyle"
+            android:drawableTop="@mipmap/ic_life_ztdr"
+            android:text="主题党日" />
+
+        <TextView
+            android:id="@+id/tv_shyk"
+            style="@style/organizingLifeTextStyle"
+            android:drawableTop="@mipmap/ic_life_shyk"
+            android:text="三会一课" />
+
+        <TextView
+            android:id="@+id/tv_mzpy"
+            style="@style/organizingLifeTextStyle"
+            android:drawableTop="@mipmap/ic_life_mzpy"
+            android:text="民主评议" />
+
+
+        <TextView
+            android:id="@+id/tv_zzshh"
+            style="@style/organizingLifeTextStyle"
+            android:drawableTop="@mipmap/ic_life_zzshh"
+            android:text="组织生活会" />
+
+        <TextView
+            android:id="@+id/tv_more"
+            style="@style/organizingLifeTextStyle"
+            android:drawableTop="@mipmap/ic_life_more"
+            android:text="其他" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

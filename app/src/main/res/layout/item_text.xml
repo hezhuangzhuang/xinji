@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rl_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="18dp"
+    android:paddingRight="18dp"
+    android:paddingTop="18dp">
+
+    <!--所有sp加大两个号-->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        tools:text="1111"
+        android:textStyle="bold"
+        android:ellipsize="middle"
+        android:lineSpacingExtra="3dp"
+        android:maxLines="2"
+        android:textColor="@color/color_333"
+        android:textSize="19sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_website"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:maxLength="16"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/tv_time"
+        android:singleLine="true"
+        tools:text="这是发布方"
+        android:textColor="@color/color_AAB4BA"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tv_content_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/tv_website"
+        android:drawablePadding="3dp"
+        android:gravity="center"
+        tools:text="这是发布方"
+        android:visibility="gone"
+        android:textColor="@color/color_AAB4BA"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_marginLeft="10dp"
+        android:gravity="right"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/color_AAB4BA"
+        android:textSize="14sp"
+        tools:text="这是时间"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/tv_time"
+        android:layout_marginTop="16dp"
+        android:background="@color/color_EBECEC"/>
+
+</RelativeLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.zxwl.xinji.activity.LoginActivity">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:src="@mipmap/ic_login_logo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="辛集市党建平台"
+        android:textColor="@color/color_666"
+        android:textSize="19sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_name_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_below="@id/iv_logo"
+        android:layout_marginTop="90dp"
+        android:textColor="@color/color_677078"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name_lable"
+        android:background="@null"
+        android:drawableLeft="@mipmap/ic_login_user"
+        android:drawablePadding="12dp"
+        android:hint="请输入账户"
+        android:inputType="text"
+        android:maxLength="11"
+        android:maxLines="1"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp"
+        android:singleLine="true"
+        android:textColor="@color/color_333"
+        android:textColorHint="@color/color_999"
+        android:textSize="16sp"/>
+
+    <View
+        android:layout_alignLeft="@id/et_name"
+        android:layout_alignRight="@id/et_name"
+        android:id="@+id/view_name"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@id/et_name"
+        android:background="@color/color_ccc"/>
+
+    <TextView
+        android:id="@+id/tv_pwd_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_below="@id/view_name"
+        android:layout_marginTop="20dp"
+        android:text="密码"
+        android:textColor="@color/color_677078"
+        android:textSize="15sp"/>
+
+    <FrameLayout
+        android:layout_alignLeft="@id/et_name"
+        android:layout_alignRight="@id/et_name"
+        android:id="@+id/fl_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_pwd_lable">
+
+        <EditText
+            android:id="@+id/et_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableLeft="@mipmap/ic_login_pwd"
+            android:drawablePadding="12dp"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp"
+            android:singleLine="true"
+            android:textColor="@color/color_333"
+            android:textColorHint="@color/color_999"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/iv_pwd_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:padding="12dp"
+            android:src="@mipmap/ic_pwd_hide"/>
+    </FrameLayout>
+
+    <View
+        android:layout_alignLeft="@id/et_name"
+        android:layout_alignRight="@id/et_name"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@id/fl_pwd"
+        android:background="@color/color_ccc"/>
+
+    <Button
+        android:layout_alignLeft="@id/et_name"
+        android:layout_alignRight="@id/et_name"
+        android:id="@+id/bt_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/fl_pwd"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_bt_login_bg"
+        android:text="登录"
+        android:textColor="@color/white"
+        android:textSize="18sp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2dp"
+        android:src="@mipmap/ic_login_bg" />
+
+    <View
+        android:id="@+id/center_view"
+        android:layout_width="1dp"
+        android:layout_height="18dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@color/color_ddd"/>
+
+    <TextView
+        android:id="@+id/tv_back_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/center_view"
+        android:layout_alignTop="@id/center_view"
+        android:layout_toLeftOf="@id/center_view"
+        android:text="忘记密码"
+        android:textColor="@color/color_999"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/tv_no_login"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/center_view"
+        android:layout_alignTop="@id/center_view"
+        android:layout_toRightOf="@id/center_view"
+        android:text="暂不登录"
+        android:textColor="@color/color_999"
+        android:textSize="15sp"/>
+
+</RelativeLayout>

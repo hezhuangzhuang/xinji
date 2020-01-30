@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="13dp">
+
+    <!--item_-->
+
+    <ImageView
+        android:id="@+id/iv_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:src="@mipmap/ic_city"/>
+
+    <TextView
+        android:id="@+id/tv_city"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_img"
+        android:text="马庄乡"
+        android:textColor="@color/color_333"
+        android:textSize="16sp"/>
+
+    <View
+        android:layout_marginTop="13dp"
+        android:layout_below="@id/iv_img"
+        android:background="@color/color_eee"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+</RelativeLayout>

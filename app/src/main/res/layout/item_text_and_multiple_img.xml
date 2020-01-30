@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rl_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="18dp"
+    android:paddingRight="18dp"
+    android:paddingTop="18dp">
+    <!--所有sp加大两个号-->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="3dp"
+        android:maxLines="2"
+        tools:text="这是标题"
+        android:textColor="@color/color_333"
+        android:textSize="19sp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal">
+
+        <!--<com.zxwl.commonlibrary.imageloader.GlideImageView-->
+        <!--android:id="@+id/iv_one"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="75dp"-->
+        <!--android:layout_weight="1"-->
+        <!--tools:src="@color/black_alpha_45"/>-->
+
+        <!--<com.zxwl.commonlibrary.imageloader.GlideImageView-->
+        <!--android:id="@+id/iv_two"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="75dp"-->
+        <!--android:layout_marginLeft="3dp"-->
+        <!--android:layout_marginRight="3dp"-->
+        <!--android:layout_weight="1"-->
+        <!--tools:src="@color/black_alpha_45"/>-->
+
+        <!--<com.zxwl.commonlibrary.imageloader.GlideImageView-->
+        <!--android:id="@+id/iv_three"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="75dp"-->
+        <!--android:layout_weight="1"-->
+        <!--tools:src="@color/black_alpha_45"/>-->
+
+        <com.github.siyamed.shapeimageview.RoundedImageView
+            android:id="@+id/iv_one"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            app:siRadius="3dp"
+            app:siSquare="false"
+            tools:src="@color/black_alpha_45"/>
+
+        <com.github.siyamed.shapeimageview.RoundedImageView
+            android:id="@+id/iv_two"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            app:siRadius="3dp"
+            app:siSquare="false"
+            tools:src="@color/black_alpha_45"/>
+
+        <com.github.siyamed.shapeimageview.RoundedImageView
+            android:id="@+id/iv_three"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            app:siRadius="3dp"
+            app:siSquare="false"
+            tools:src="@color/black_alpha_45"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_website"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_img"
+        android:maxLength="16"
+        android:layout_alignParentLeft="true"
+        android:singleLine="true"
+        android:layout_toLeftOf="@id/tv_time"
+        android:textColor="@color/color_AAB4BA"
+        android:textSize="14sp"
+        tools:text="fabu1"/>
+
+    <TextView
+        android:id="@+id/tv_content_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_img"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/tv_website"
+        android:drawablePadding="3dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textColor="@color/color_AAB4BA"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_img"
+        android:layout_marginLeft="10dp"
+        tools:text="这是时间"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/color_AAB4BA"
+        android:textSize="14sp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignLeft="@id/ll_img"
+        android:layout_alignRight="@id/ll_img"
+        android:layout_below="@id/tv_time"
+        android:layout_marginTop="16dp"
+        android:background="@color/color_EBECEC"/>
+
+</RelativeLayout>

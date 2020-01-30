@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ReleaseNoteActivity">
+
+    <include layout="@layout/common_title_layout_old" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:text="标题"
+                android:textColor="@color/color_666"
+                android:visibility="gone" />
+
+            <com.zxwl.xinji.widget.ContainsEmojiEditText
+                android:id="@+id/et_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="请输入标题"
+                android:maxLength="200"
+                android:padding="12dp"
+                android:textColor="@color/color_333"
+                android:textSize="20sp" />
+
+            <View
+                android:id="@+id/view_one"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@color/color_eee"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="12dp"
+                android:textColor="@color/color_999"
+                android:textSize="13sp"
+                android:visibility="visible"
+                tools:text="时间" />
+
+            <TextView
+                android:id="@+id/tv_content_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:text="内容"
+                android:textColor="@color/color_666"
+                android:visibility="gone" />
+
+            <com.zxwl.xinji.widget.ContainsEmojiEditText
+                android:id="@+id/et_content"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="请输入内容"
+                android:maxLength="2000"
+                android:padding="12dp"
+                android:textColor="@color/color_333"
+                android:textSize="20sp" />
+
+            <FrameLayout
+                android:id="@+id/fl_del"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/shape_claim_status_false"
+                android:padding="12dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@mipmap/ic_del_note"
+                    android:drawablePadding="6dp"
+                    android:gravity="center"
+                    android:text="删除"
+                    android:textColor="@color/color_e64a3a" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_screen"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_f6f6f6"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableRight="@mipmap/iv_city_screen"
+            android:gravity="center"
+            android:text="请选择时间"
+            android:textColor="@color/color_333"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableRight="@mipmap/iv_city_screen"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:text="请选择类型"
+            android:textColor="@color/color_333"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableRight="@mipmap/iv_city_screen"
+            android:gravity="center"
+            android:text="请选择地点"
+            android:textColor="@color/color_333"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_screen"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/color_f6f6f6"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/color_666"
+            android:textSize="14sp"
+            tools:text="辛集市" />
+
+        <TextView
+            android:id="@+id/tv_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@mipmap/iv_city_screen"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:paddingRight="20dp"
+            android:text="请选择"
+            android:textColor="@color/color_333"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:srlAccentColor="#fff"
+        app:srlEnableLoadMoreWhenContentNotFull="true"
+        app:srlEnablePreviewInEditMode="false"
+        app:srlPrimaryColor="#faf1f0">
+
+        <!--    srlEnableHeaderTranslationContent-->
+        <!--    boolean-->
+        <!--    拖动Header的时候是否同时拖动内容（默认true）-->
+
+        <!--    srlEnableFooterTranslationContent-->
+        <!--    boolean-->
+        <!--    拖动Footer的时候是否同时拖动内容（默认true）-->
+
+        <!--    srlEnablePreviewInEditMode-->
+        <!--    boolean-->
+        <!--    是否在编辑模式时显示预览效果（默认true）-->
+
+        <!--    srlEnablePureScrollMode-->
+        <!--    boolean-->
+        <!--    是否开启纯滚动模式（默认false-开启时只支持一个子视图）-->
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:nestedScrollingEnabled="false" />
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>
+
+
+
+

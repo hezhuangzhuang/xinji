@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="15dp">
+
+    <!--item_新闻资讯-->
+    <!--item_现代远程教育-->
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="10dp"
+        android:drawablePadding="12dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:drawableLeft="@mipmap/ic_item_new"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@color/color_333"
+        android:textSize="17sp"
+        tools:text="党徽在行动，奉献助学忙"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/tv_content"
+        android:layout_marginTop="14dp"
+        android:background="@color/color_eee"/>
+
+</RelativeLayout>

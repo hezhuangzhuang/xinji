@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="6dp"
+    android:background="@color/white"
+    android:paddingBottom="20dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="20dp">
+
+    <!--item_事件督办-->
+    <Button
+        android:id="@+id/bt_reply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_result"
+        android:background="@drawable/shape_bg_white_stroke_25"
+        android:text="回复"
+        android:textColor="@color/color_999"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shape_bg_f5f5f5_5"
+        android:paddingBottom="6dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="6dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_result_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/color_999"
+            tools:text="2019-02-14" />
+
+        <TextView
+            android:id="@+id/tv_result_website"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="6dp"
+            android:layout_toLeftOf="@id/tv_result_time"
+            android:textColor="@color/color_999"
+            tools:text="辛集市小辛庄乡王山口村村委" />
+
+        <TextView
+            android:id="@+id/tv_result_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_result_website"
+            android:layout_marginTop="12dp"
+            android:lineSpacingExtra="6dp"
+            android:textColor="@color/color_333"
+            android:textSize="15sp"
+            tools:text="执行单位" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_website"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/tv_tilte"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="6dp"
+        android:layout_toLeftOf="@id/tv_time"
+        android:textColor="@color/color_999"
+        tools:text="执行单位：辛集市小辛庄乡王山口村村委" />
+
+    <TextView
+        android:id="@+id/tv_reply_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_website"
+        android:text="是否已读"
+        android:drawablePadding="5dp"
+        android:textColor="@color/color_666" />
+
+    <TextView
+        android:id="@+id/tv_red_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/tv_website"
+        android:layout_marginRight="12dp"
+        android:layout_toLeftOf="@id/tv_reply_status"
+        android:text="是否已读"
+        android:textColor="@color/color_666" />
+
+
+    <TextView
+        android:id="@+id/tv_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_website"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/color_333"
+        android:textSize="15sp"
+        android:visibility="gone"
+        tools:text="执行单位" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_unit"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="12dp"
+        android:lineSpacingExtra="6dp"
+        android:textColor="@color/color_666"
+        android:textSize="15sp"
+        android:visibility="gone"
+        tools:text="全国扫黑除恶专项斗争领导小组召开会议，听取中央扫黑除恶第11至第21督导组开展第三轮督导情况汇报，研究部署下一步工作。会议强调" />
+
+    <TextView
+        android:id="@+id/tv_tilte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:drawableLeft="@mipmap/ic_party_membership"
+        android:drawablePadding="6dp"
+        android:textColor="@color/color_e85541"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:text="党费收缴督查" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_tilte"
+        android:textColor="@color/color_999"
+        tools:text="2019-02-14" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_content"
+        android:visibility="gone" />
+
+</RelativeLayout>

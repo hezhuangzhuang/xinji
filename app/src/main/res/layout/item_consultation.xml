@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="15dp">
+
+    <!--我要咨询-->
+
+    <FrameLayout
+        android:id="@+id/fl_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_item_consultation"/>
+
+        <TextView
+            android:id="@+id/tv_unread_number"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:minWidth="20dp"
+            android:layout_gravity="right"
+            android:background="@drawable/shape_unread_bg"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:visibility="gone"
+            tools:text="11"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/fl_lable"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/color_333"
+        android:textSize="15sp"
+        tools:text="想申请转移党支部关系至小辛庄乡具体怎想申请转移党支部关系至小辛庄乡具体怎"/>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/fl_lable"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/color_999"
+        android:textSize="12sp"
+        tools:text="想申请转移党支部关系至小辛庄乡具体怎想申请转移党支部关系至小辛庄乡具体怎想申请转移党支部关系至小辛庄乡具体怎"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/tv_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/color_eee"/>
+
+</RelativeLayout>

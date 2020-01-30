@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_address"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_bg_white_top_radius_25"
+    android:paddingLeft="20dp"
+    android:paddingTop="12dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="12dp"
+    android:visibility="gone">
+
+    <!--显示搜索出点的弹出框-->
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_333"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:text="王山口村" />
+
+    <TextView
+        android:id="@+id/tv_snippet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="8dp"
+        android:text=".getSnippet();"
+        android:textColor="@color/color_999" />
+
+    <android.support.v4.widget.Space
+        android:id="@+id/center_space"
+        android:layout_width="25dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true" />
+
+    <FrameLayout
+        android:id="@+id/fl_navi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_snippet"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@id/center_space"
+        android:background="@drawable/shape_claim_status_false"
+        android:padding="12dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_navigation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@mipmap/ic_map_navi"
+            android:drawablePadding="8dp"
+            android:gravity="center"
+            android:text="导航"
+            android:textColor="@color/color_e85541"
+            android:textSize="15sp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_snippet"
+        android:layout_alignTop="@id/fl_navi"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shape_claim_status_false"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/tv_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@mipmap/ic_map_line"
+            android:drawablePadding="8dp"
+            android:gravity="center"
+            android:text="驾车路线"
+            android:textColor="@color/color_e85541"
+            android:textSize="15sp" />
+    </FrameLayout>
+
+
+</RelativeLayout>

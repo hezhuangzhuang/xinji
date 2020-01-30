@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zxwl.xinji.activity.SearchActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/color_e64a3a"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_back_operate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="10dp"
+            android:src="@mipmap/general_white_back_icon"/>
+
+        <com.zxwl.xinji.widget.ContainsEmojiEditText
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/shape_bt_input_e42417_25"
+            android:drawableLeft="@mipmap/ic_home_search"
+            android:drawablePadding="12dp"
+            android:ellipsize="middle"
+            android:gravity="center_vertical"
+            android:hint="请输入关键字"
+            android:paddingBottom="8dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="8dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="13sp"
+            />
+    </LinearLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlAccentColor="#fff"
+        app:srlEnableLoadMoreWhenContentNotFull="true"
+        app:srlEnablePreviewInEditMode="false"
+        app:srlPrimaryColor="#faf1f0">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_list"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

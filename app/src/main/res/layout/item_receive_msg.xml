@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="15dp">
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shape_receive_msg_bg"
+        android:lineSpacingExtra="3dp"
+        android:padding="14dp"
+        android:text="把最后确认的版本发给我一下把最后确认的版本发给我一下"
+        android:textColor="@color/color_333"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_content"
+        android:layout_marginBottom="6dp"
+        android:text="后台回复 2019-05-16 15:21"
+        android:textColor="@color/color_999"
+        android:textSize="12sp"/>
+
+</RelativeLayout>

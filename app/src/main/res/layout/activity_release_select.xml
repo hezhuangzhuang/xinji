@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.zxwl.xinji.activity.ReleaseSelectActivity">
+
+    <TextView
+        android:id="@+id/tv_close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="86dp"
+        android:drawableRight="@mipmap/ic_release_select_close"
+        android:gravity="center_vertical"
+        android:text="选择发布类型"
+        android:textColor="@color/color_999"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tv_ztdr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_zzshh"
+        android:layout_alignRight="@+id/tv_zzshh"
+        android:layout_below="@id/tv_close"
+        android:layout_marginBottom="30dp"
+        android:drawablePadding="10dp"
+        android:drawableTop="@mipmap/ic_release_select_ztdr"
+        android:gravity="center"
+        android:text="主题党日"
+        android:textColor="@color/color_333"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tv_shyk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_close"
+        android:layout_centerHorizontal="true"
+        android:drawablePadding="10dp"
+        android:drawableTop="@mipmap/ic_release_select_shyk"
+        android:text="三会一课"
+        android:textColor="@color/color_333"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tv_mzpy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_close"
+        android:layout_marginRight="30dp"
+        android:drawablePadding="10dp"
+        android:drawableTop="@mipmap/ic_release_select_mzpy"
+        android:text="民主评议"
+        android:textColor="@color/color_333"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tv_zzshh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_ztdr"
+        android:layout_marginLeft="30dp"
+        android:drawablePadding="10dp"
+        android:drawableTop="@mipmap/ic_release_select_zzshh"
+        android:text="组织生活会"
+        android:textColor="@color/color_333"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tv_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_shyk"
+        android:layout_alignRight="@id/tv_shyk"
+        android:layout_below="@id/tv_ztdr"
+        android:layout_centerHorizontal="true"
+        android:drawablePadding="10dp"
+        android:drawableTop="@mipmap/ic_release_select_more"
+        android:gravity="center"
+        android:text="其他"
+        android:textColor="@color/color_333"
+        android:textSize="16sp"/>
+</RelativeLayout>

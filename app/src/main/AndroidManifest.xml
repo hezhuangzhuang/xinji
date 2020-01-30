@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.zxwl.xinji"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/> <!-- 在SD卡中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.CAMERA"/> <!-- 使用可视化操作命名功能需配置悬浮窗权限(选配) -->
+    <!-- 允许程序访问CellID或WiFi热点来获取粗略的位置 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.READ_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/> <!-- 声明后台定位权限 -->
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/> <!-- 加入白名单 -->
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:maxAspectRatio="2.4"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:resizeableActivity="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup">
+        <activity android:name=".activity.PrivacyActivity">
+        </activity>
+        <activity android:name=".activity.AboutNewActivity">
+        </activity>
+        <activity
+            android:name=".activity.MapDetailsActivity"
+            android:screenOrientation="portrait"/> <!-- 视频播放 -->
+        <activity
+            android:name=".activity.VideoPlayActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="landscape"/> <!-- 驾车出行路线规划 实现-DriveRouteActivity -->
+        <activity
+            android:name=".activity.DriveRouteActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.PoiKeywordSearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity
+            android:name=".activity.CustomNaviActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.VillageListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.VillageBaseInfoActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.AddTsbcActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.NoteDetailsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.ReleaseNoteActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"/> <!-- 高德-start -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="0ccf875186a96689f53b654d7351a552"/> <!-- android:foregroundServiceType="location" -->
+        <service android:name="com.amap.api.location.APSService"/>
+
+        <activity
+            android:name="com.amap.api.navi.AmapRouteActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true"/> <!-- 高德-end -->
+        <activity
+            android:name=".activity.VideoConfDetailsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.ConfListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.NotifDetailsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.MonitorActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.ServiceMoreActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.SgdzDetailsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.ReleaseSgdzActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.VideoCallActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.CollectionActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.PartyBranchPersonActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity
+            android:name=".activity.ScreenViewPagerActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.PersonnelDetailsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.WxyListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.MineActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.WxyActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.DocumentDetailsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.OrganizationDocumentsActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.WorkingConditionActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.WxyDetailsActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.ClaimWxyActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.ReleaseWxyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity
+            android:name=".activity.NewAndInfoActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.CmswdbDetailsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.AddCmswdbActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.zxwl.xinji"/>
+        <activity
+            android:name=".activity.EditUnitInfoActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.CommonActivity"
+            android:configChanges="orientation|screenSize"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name=".activity.TBXActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"/> <!-- 来电界面 -->
+        <activity
+            android:name=".activity.EventSupervisorActivity"
+            android:screenOrientation="portrait"/> <!-- 天地图 -->
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+
+            <!-- 请添加这里的整个intent-filter区块，并确保其中只有一个data字段 -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:scheme="tingyun."/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/> <!-- 适配华为（huawei）刘海屏 -->
+        <activity
+            android:name=".activity.MainActivity"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/> <!-- 适配小米（xiaomi）刘海屏 -->
+        <activity
+            android:name=".activity.OrganizingLifeDetailsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/> <!-- 布局适配-start -->
+        <!-- 如果您项目中的所有页面都只需要以高或宽中的一个作为基准进行适配的话, 那就只需要填写高或宽中的一个设计图尺寸即可 -->
+        <activity
+            android:name=".activity.ConfDetailsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/> <!-- <meta-data -->
+        <!-- android:name="design_height_in_dp" -->
+        <!-- android:value="960"/> -->
+        <!-- 布局适配-end -->
+        <activity
+            android:name=".activity.ReleaseSelectActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.ReleaseThemePartyDayActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity
+            android:name=".activity.ReleaseConfActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity
+            android:name=".activity.RefreshRecyclerActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/> <!-- 组织详情 -->
+        <activity
+            android:name=".activity.ArticleDetailsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/> <!-- 三会一课详情 -->
+        <activity
+            android:name=".activity.VideoDetailsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"/> <!-- 发布选择界面 -->
+        <activity
+            android:name=".activity.BfzrrglDetailsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/> <!-- 发布主题党日界面 -->
+        <activity
+            android:name=".activity.OnlineEvaluationActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/> <!-- 发布三会一课 -->
+        <!-- 列表界面 -->
+        <activity
+            android:name=".activity.ChangePwdActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/> <!-- 文章详情界面 -->
+        <activity
+            android:name=".activity.AboutActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/> <!-- 视频详情界面 -->
+        <activity
+            android:name=".activity.SearchActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/> <!-- 帮扶责任人管理界面 -->
+        <activity
+            android:name=".activity.DataStatisticsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/> <!-- 线上评比界面 -->
+        <activity
+            android:name=".activity.ProposalActivity"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/> <!-- 打分详情界面 -->
+        <activity
+            android:name=".activity.ConsultationDetailsActivity"
+            android:screenOrientation="portrait"/> <!-- 修改密码界面 -->
+        <activity
+            android:name=".activity.SelectPersonnelActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/> <!-- 关于界面 -->
+        <activity
+            android:name=".activity.NotifActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/> <!-- 搜索界面 -->
+        <activity
+            android:name=".activity.NewsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/> <!-- 数据统计界面 -->
+        <activity
+            android:name=".activity.WebActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop"/> <!-- 我要咨询界面 -->
+        <activity
+            android:name=".activity.VoteResultActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/> <!-- 咨询详情界面-聊天界面 -->
+        <activity
+            android:name=".activity.ContentDetailsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"/> <!-- 选择列席人员界面 -->
+        <activity
+            android:name=".activity.AddDylxhActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/> <!-- 通知界面 -->
+        <activity
+            android:name=".activity.AddBfzrrglActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.PartyContactDetailsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.ServiceAgreementActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+
+        <meta-data
+            android:name="com.tianditu.apikey"
+            android:value="9759d02e0f117d64ac4e701eee42dd20"/>
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.4"/> <!-- 适配华为（huawei）刘海屏 -->
+        <meta-data
+            android:name="android.notch_support"
+            android:value="true"/> <!-- 适配小米（xiaomi）刘海屏 -->
+        <meta-data
+            android:name="notch.config"
+            android:value="portrait|landscape"/>
+        <meta-data
+            android:name="design_width_in_dp"
+            android:value="385"/>
+
+        <service
+            android:name=".service.HeadService"
+            android:enabled="true"
+            android:exported="true"/>
+    </application>
+
+</manifest>

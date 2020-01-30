@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.AboutNewActivity">
+
+    <include layout="@layout/common_title_layout_old"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:src="@mipmap/ic_about_new"/>
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="版本号"
+        android:textColor="@color/color_677078"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/tv_about"
+        android:textSize="15sp"
+        style="@style/mine_item_text_style"
+        android:layout_marginTop="40dp"
+        android:text="关于辛集党建"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_e5e5e5"/>
+
+    <TextView
+        android:textSize="15sp"
+        android:id="@+id/tv_user"
+        style="@style/mine_item_text_style"
+        android:text="用户协议"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_e5e5e5"/>
+
+    <TextView
+        android:textSize="15sp"
+        android:id="@+id/tv_privacy"
+        style="@style/mine_item_text_style"
+        android:text="隐私说明"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_e5e5e5"/>
+
+</LinearLayout>

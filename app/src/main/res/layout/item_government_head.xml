@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    android:id="@+id/tv_head"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="12dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="19dp"
+    tools:text="党务村务公开"
+    android:textColor="@color/color_666"
+    android:textSize="15sp"
+    xmlns:tools="http://schemas.android.com/tools"
+    />

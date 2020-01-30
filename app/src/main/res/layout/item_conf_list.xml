@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="6dp"
+    android:background="@color/white"
+    android:paddingLeft="15dp"
+    android:id="@+id/cl_content"
+    android:paddingTop="20dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="20dp">
+
+    <ImageView
+        android:id="@+id/iv_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_conf_lable" />
+
+    <ImageView
+        android:id="@+id/iv_join_conf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_conf_join"
+        app:layout_constraintBottom_toBottomOf="@id/iv_lable"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/color_333"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/iv_lable"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:text="这是标题这是标题这是标" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="10dp"
+        android:drawableLeft="@mipmap/ic_conf_time"
+        android:singleLine="true"
+        android:drawablePadding="8dp"
+        app:layout_constraintLeft_toLeftOf="@id/tv_title"
+        app:layout_constraintRight_toLeftOf="@id/iv_join_conf"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        tools:text="这是标题这是标题这是标题这是标题这是标题这是标题这是标题这是标题这是标题这是标题这是标题这是标题这是标题这是标题这是标题这是标题这是标题这是标题这是标题这是标题" />
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="10dp"
+        android:drawableLeft="@mipmap/ic_conf_status"
+        android:singleLine="true"
+        android:drawablePadding="8dp"
+        app:layout_constraintLeft_toLeftOf="@id/tv_title"
+        app:layout_constraintRight_toLeftOf="@id/iv_join_conf"
+        app:layout_constraintTop_toBottomOf="@id/tv_time"
+        tools:text="这是标题这是标题这是标题这是标题这是标题这是标题这是标题这是标题这是标题这是标题这是标题这是标题这是标题这是标题这是标题这是标题这是标题这是标题这是标题这是标题" />
+
+
+</android.support.constraint.ConstraintLayout>

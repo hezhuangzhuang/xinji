@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingTop="12dp"
+    android:paddingBottom="12dp"
+    android:paddingLeft="18dp"
+    android:paddingRight="18dp"
+    >
+
+    <com.zxwl.commonlibrary.widget.CircleImageView
+        android:id="@+id/iv_head"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginRight="10dp"
+        tools:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_head"
+        android:layout_toRightOf="@id/iv_head"
+        android:textColor="@color/color_677078"
+        android:textSize="13sp"
+        tools:text="名字"/>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@id/tv_name"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:paddingLeft="10dp"
+        android:text="时间"
+        android:textColor="@color/color_AAB4BA"
+        android:textSize="13sp"/>
+
+    <TextView
+        android:id="@+id/tv_support"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:drawablePadding="6dp"
+        android:text="点赞"
+        android:visibility="gone"
+        android:textColor="@color/color_AAB4BA"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_marginTop="16dp"
+        tools:text="宏观政策的空间大是未来推进中国经济平稳健康发展的重要保障。"
+        android:layout_toRightOf="@id/iv_head"
+        android:lineSpacingExtra="6dp"
+        android:textColor="@color/color_191D24"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/tv_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_content"
+        android:layout_marginTop="5dp"
+        android:text="删除"
+        android:textColor="@color/color_191D24"
+        android:visibility="visible"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignLeft="@id/tv_name"
+        android:layout_below="@id/tv_del"
+        android:layout_marginTop="12dp"
+        android:background="@color/color_EBECEC"/>
+
+</RelativeLayout>

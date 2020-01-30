@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--<color name="dots_select_color">#60cccccc</color>-->
+    <!--<color name="dots_unselect_color">#40cccccc</color>-->
+    <color name="dots_select_color">#dedede</color>
+    <color name="dots_unselect_color">#e6e6e6</color>
+    <color name="black_alpha_45">#71000000</color>
+
+    <color name="nine_image_text_background_color">#4D000000</color>
+    <color name="nine_image_text_color">#FFFFFF</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="white_99">#99FFFFFF</color>
+    <color name="white_90">#90FFFFFF</color>
+    <color name="color_999">#999999</color>
+    <color name="color_333">#333333</color>
+    <color name="color_ccc">#CCC</color>
+    <color name="color_fafafa">#FAFAFA</color>
+    <color name="color_191D24">#191D24</color>
+    <color name="color_ddd">#dddddd</color>
+    <color name="tran">#00000000</color>
+    <color name="color_fe9d03">#fe9d03</color>
+    <color name="color_d34d4a">#d34d4a</color>
+
+</resources>

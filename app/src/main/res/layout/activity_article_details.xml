@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zxwl.xinji.activity.ArticleDetailsActivity">
+
+    <include layout="@layout/common_title_layout_old"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="18dp"
+        android:paddingTop="18dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:lineSpacingExtra="5dp"
+            android:maxLines="2"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:textColor="@color/color_333"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="以习近平同志为核心的党中央坚定不移推进全面深化改革"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:paddingRight="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_title"
+            android:layout_marginLeft="6dp"
+            android:textColor="@color/color_AAB4BA"
+            android:textSize="13sp"
+            tools:text="2018-10-10"/>
+
+        <TextView
+            android:id="@+id/tv_website"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/tv_title"
+            android:layout_toLeftOf="@id/tv_time"
+            android:maxLength="16"
+            android:paddingLeft="18dp"
+            android:singleLine="true"
+            android:textColor="@color/color_333"
+            android:textSize="13sp"
+            tools:text="人民网"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_title"
+            android:text="展开"
+            android:textColor="@color/color_AAB4BA"
+            android:textSize="13sp"
+            android:visibility="gone"/>
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_time"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="16dp"
+            android:visibility="visible"/>
+
+    </RelativeLayout>
+</LinearLayout>

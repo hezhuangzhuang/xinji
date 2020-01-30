@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.zxwl.xinji.activity.PartyContactDetailsActivity">
+
+    <include layout="@layout/common_title_layout_old"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="14dp"
+        android:paddingTop="14dp">
+
+        <TextView
+            style="@style/style_party_contact_key"
+            android:text="党员姓名"/>
+
+        <TextView
+            android:id="@+id/tv_party_name"
+            style="@style/style_party_contact_value"
+            tools:text="党徽在行动，奉献助学忙"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_eee"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="14dp"
+        android:paddingTop="14dp">
+
+        <TextView
+            style="@style/style_party_contact_key"
+            android:text="党员联系电话"/>
+
+        <TextView
+            android:id="@+id/tv_party_phone"
+            style="@style/style_party_contact_value"
+            tools:text="党徽在行动，奉献助学忙"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_eee"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="14dp"
+        android:paddingTop="14dp">
+
+        <TextView
+            style="@style/style_party_contact_key"
+            android:text="联系户姓名"/>
+
+        <TextView
+            android:id="@+id/tv_contact_name"
+            style="@style/style_party_contact_value"
+            tools:text="党徽在行动，奉献助学忙"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_eee"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="14dp"
+        android:paddingTop="14dp">
+
+        <TextView
+            style="@style/style_party_contact_key"
+            android:text="联系户联系电话"/>
+
+        <TextView
+            android:id="@+id/tv_contact_phone"
+            style="@style/style_party_contact_value"
+            tools:text="党徽在行动，奉献助学忙"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_eee"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="14dp"
+        android:paddingTop="14dp">
+
+        <TextView
+            style="@style/style_party_contact_key"
+            android:text="时间"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/style_party_contact_value"
+            tools:text="党徽在行动，奉献助学忙"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_eee"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="14dp"
+        android:paddingTop="14dp">
+
+        <TextView
+            style="@style/style_party_contact_key"
+            android:text="联系户地址"/>
+
+        <TextView
+            android:id="@+id/tv_contact_address"
+            style="@style/style_party_contact_value"
+            tools:text="党徽在行动，奉献助学忙党徽在行动，奉献助学忙党徽在行动，奉献助学忙"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_eee"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="14dp"
+        android:paddingTop="14dp">
+
+        <TextView
+            style="@style/style_party_contact_key"
+            android:text="联系户工作单位"/>
+
+        <TextView
+            android:id="@+id/tv_contact_unit"
+            style="@style/style_party_contact_value"
+            android:singleLine="false"
+            android:maxLines="3"
+            tools:text="党徽在行动，奉献助学忙"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_eee"/>
+
+</LinearLayout>

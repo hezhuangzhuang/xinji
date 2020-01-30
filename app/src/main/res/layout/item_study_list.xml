@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/rl_content"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+    <!--item_学习-->
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_img"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/iv_img"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/color_333"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        tools:text="com.github.siyamed.shapeimageview.RoundedImageView"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_img"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/iv_img"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_img"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="bottom"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/color_999"
+            android:textSize="15sp"
+            tools:text="这是发布人这是人"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/tv_content"
+            android:drawablePadding="3dp"
+            android:gravity="bottom"
+            android:textColor="@color/color_AAB4BA"
+            android:textSize="14sp"
+            tools:text="这是时间"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_eee"/>
+
+    <com.github.siyamed.shapeimageview.RoundedImageView
+        android:id="@+id/iv_img"
+        android:layout_width="120dp"
+        android:layout_height="75dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:minHeight="80dp"
+        android:scaleType="fitXY"
+        app:siBorderWidth="0dp"
+        app:siRadius="3dp"
+        android:background="@drawable/shape_img_bg_3dp"
+        app:siSquare="false"
+        tools:src="@mipmap/ic_work_tszs"/>
+    <!--android:background="@drawable/shape_img_bg_3dp"-->
+    <!--android:background="@color/color_d34d4a"-->
+    <!--imageView.setBackgroundColor(ContextCompat.getColor(getContext(),R.color.color_d34d4a));-->
+</RelativeLayout>

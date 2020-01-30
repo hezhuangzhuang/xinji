@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingTop="18dp"
+    android:paddingRight="10dp">
+
+    <!--投票界面-->
+    <com.github.siyamed.shapeimageview.RoundedImageView
+        android:id="@+id/iv_head"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginRight="20dp"
+        android:scaleType="center"
+        app:siBorderColor="@color/tran"
+        app:siBorderWidth="0dp"
+        app:siRadius="3dp"
+        app:siSquare="false"
+        tools:src="@color/black_alpha_45" />
+
+    <TextView
+        android:id="@+id/tv_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@id/iv_head"
+        android:textColor="@color/color_333"
+        android:textSize="15sp"
+        tools:text="1hao" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/tv_order"
+        android:textColor="@color/color_333"
+        android:textSize="15sp"
+        tools:text="董世出来" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/iv_head"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/color_999"
+        android:textSize="14sp"
+        tools:text="这是我的内容" />
+
+    <LinearLayout
+        android:id="@+id/ll_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_head"
+        android:layout_marginTop="14dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/fl_progress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_vote_number"
+            android:layout_alignBottom="@id/tv_vote_number"
+            android:layout_toLeftOf="@id/tv_vote_number"
+            android:layout_weight="1">
+
+            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                android:id="@+id/progress"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_alignTop="@id/tv_vote_number"
+                android:layout_gravity="center_vertical"
+                app:rcBackgroundColor="@color/color_eee"
+                app:rcBackgroundPadding="0dp"
+                app:rcProgressColor="@color/color_fbc228"
+                app:rcRadius="4dp" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_vote_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/bt_vote"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@id/bt_vote"
+            android:textColor="@color/color_999"
+            android:textSize="13sp"
+            tools:text="15" />
+
+        <TextView
+            android:id="@+id/bt_vote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/shape_vote_bt_bg_25"
+            android:paddingLeft="18dp"
+            android:paddingTop="9dp"
+            android:paddingRight="18dp"
+            android:paddingBottom="9dp"
+            android:text="投票"
+            android:textColor="@color/color_e85641"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/ll_progress"
+        android:layout_marginTop="30dp"
+        android:background="@color/color_eee" />
+
+</RelativeLayout>

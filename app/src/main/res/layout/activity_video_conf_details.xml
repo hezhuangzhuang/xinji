@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.VideoConfDetailsActivity">
+
+    <include
+        android:id="@+id/rl_include"
+        layout="@layout/common_title_layout_old"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/ic_conf_lable"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rl_include" />
+
+    <TextView
+        android:id="@+id/tv_conf_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/color_333"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/iv_lable"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_lable"
+        tools:text="刘建国的会议20181224刘建国的会议20181224刘建国的会议20181224刘建国的会议20181224刘建国的会议20181224" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:singleLine="true"
+        android:textColor="@color/color_999"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="@id/tv_conf_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_conf_name"
+        tools:text="刘建国刘建国刘建国" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="15dp"
+        android:singleLine="true"
+        android:textColor="@color/color_999"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toRightOf="@id/tv_name"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_conf_name"
+        tools:text="刘建国刘建国刘建国刘建国刘建国刘建国刘建国刘建国刘建国刘建国" />
+
+    <View
+        android:id="@+id/view_one"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/color_eee"
+        app:layout_constraintTop_toBottomOf="@id/iv_lable" />
+
+    <TextView
+        android:id="@+id/tv_time_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:drawableLeft="@mipmap/ic_conf_details_time"
+        android:drawablePadding="10dp"
+        android:text="会议时间"
+        android:textColor="@color/color_666"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="@id/view_one"
+        app:layout_constraintTop_toBottomOf="@id/view_one" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/color_333"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="@id/tv_time_lable"
+        app:layout_constraintTop_toBottomOf="@id/tv_time_lable"
+        tools:text="时间" />
+
+    <View
+        android:id="@+id/view_two"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/color_eee"
+        app:layout_constraintTop_toBottomOf="@id/tv_time" />
+
+    <TextView
+        android:id="@+id/tv_person_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:drawableLeft="@mipmap/ic_conf_details_person"
+        android:drawablePadding="10dp"
+        android:text="参会人员"
+        android:textColor="@color/color_666"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="@id/view_one"
+        app:layout_constraintTop_toBottomOf="@id/view_two" />
+
+    <TextView
+        android:id="@+id/tv_personnel"
+        android:layout_width="0dp"
+        app:layout_constraintHorizontal_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:lineSpacingExtra="6dp"
+        android:textColor="@color/color_333"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="@id/iv_lable"
+        app:layout_constraintEnd_toEndOf="@id/tv_conf_name"
+        app:layout_constraintRight_toRightOf="@id/tv_conf_name"
+        app:layout_constraintStart_toStartOf="@+id/tv_person_lable"
+        app:layout_constraintTop_toBottomOf="@id/tv_person_lable"
+        tools:text="123456789123456789123456789123456789123456789123456" />
+
+
+    <TextView
+        android:id="@+id/tv_join_conf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/shape_bt_login_bg"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="加入会议"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_personnel" />
+
+</android.support.constraint.ConstraintLayout>

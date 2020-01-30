@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="15dp"
+    android:paddingTop="20dp"
+    android:paddingRight="15dp">
+
+    <!--item_主题党日-->
+    <!--item_民主评议-->
+    <!--item_组织生活会-->
+    <!--item_其他-->
+    <!--item_政治理论-->
+    <!--item_党务公开-->
+    <!--item_微心愿-->
+    <!--item_线上评比-->
+    <!--item_帮扶责任人管理-->
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_tilte"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/ic_theme_party_day"
+            android:drawablePadding="8dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:paddingBottom="2dp"
+            android:singleLine="true"
+            android:textColor="@color/color_333"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            tools:text="党徽在行徽在ad行动，" />
+
+        <TextView
+            android:id="@+id/tv_claim_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/shape_claim_status_true"
+            android:gravity="center"
+            android:paddingLeft="6dp"
+            android:paddingTop="5dp"
+            android:paddingRight="4dp"
+            android:paddingBottom="4dp"
+            tools:text="已认领"
+            android:textSize="11sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_job"
+            android:textSize="13sp"
+            android:textColor="@color/color_999"
+            android:text="jobVal"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_title"
+        android:layout_marginBottom="12dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:maxLines="2"
+        android:textColor="@color/color_666"
+        android:textSize="15sp"
+        tools:text="党徽在行动，奉献助学忙党徽在行动，奉献助学忙党徽在行动，奉献助学忙党徽在行动，奉献助学忙党徽在行动，奉献助学忙党徽在行动，奉献助学忙" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_content"
+        android:layout_alignParentRight="true"
+        android:maxWidth="150dp"
+        android:singleLine="true"
+        android:textColor="@color/color_999"
+        android:textSize="15sp"
+        tools:text="2019-08-08 23:59截止" />
+
+    <TextView
+        android:id="@+id/tv_website"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@id/tv_time"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/color_999"
+        android:textSize="15sp"
+        tools:text="党徽在行动，奉献助学忙奉献助学忙" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/tv_website"
+        android:layout_marginTop="12dp"
+        android:background="@color/color_eee" />
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fl_screen"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center_vertical"
+    android:visibility="visible">
+
+    <View
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:background="@color/color_E64A3A" />
+
+    <View
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_gravity="right"
+        android:background="@color/color_E64A3A" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_bg_fff0ee_top_radius_10">
+
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:drawableLeft="@mipmap/ic_map_party_logo"
+            android:drawablePadding="7dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/color_333"
+            android:textSize="17sp"
+            tools:text="王山口" />
+
+        <TextView
+            android:id="@+id/tv_city_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@id/tv_city"
+            android:gravity="center_vertical"
+            android:textColor="@color/color_666"
+            android:textSize="14sp"
+            tools:text="辛集市" />
+
+        <TextView
+            android:id="@+id/tv_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@mipmap/iv_city_screen"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:paddingRight="20dp"
+            android:text="切换地区"
+            android:textColor="@color/color_333"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+</FrameLayout>

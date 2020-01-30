@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingTop="18dp"
+    android:paddingRight="10dp">
+
+    <!--投票界面-->
+    <com.zxwl.commonlibrary.widget.CircleImageView
+        android:id="@+id/iv_head"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="20dp"
+        tools:src="@mipmap/ic_minel_head" />
+
+    <TextView
+        android:id="@+id/tv_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@id/iv_head"
+        android:textColor="@color/color_333"
+        android:textSize="15sp"
+        tools:text="1hao" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_order"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/iv_head"
+        android:textColor="@color/color_333"
+        android:textSize="15sp"
+        tools:text="董世出来" />
+
+    <TextView
+        android:id="@+id/bt_vote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/shape_vote_bt_bg_25"
+        android:paddingLeft="18dp"
+        android:paddingTop="9dp"
+        android:paddingRight="18dp"
+        android:paddingBottom="9dp"
+        android:text="投ta一票"
+        android:textColor="@color/color_e85641"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_vote_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@id/bt_vote"
+        android:textColor="@color/color_999"
+        android:textSize="13sp"
+        tools:text="15" />
+
+    <FrameLayout
+        android:id="@+id/fl_progress"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="70dp"
+        android:layout_toRightOf="@id/iv_head"
+        android:visibility="gone">
+
+        <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+            android:id="@+id/progress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tv_name"
+            android:layout_marginTop="6dp"
+            android:layout_toLeftOf="@id/iv_array"
+            app:rcBackgroundColor="@color/color_fff5f5f5"
+            app:rcBackgroundPadding="0dp"
+            app:rcProgressColor="@color/color_ddd"
+            app:rcRadius="4dp" />
+
+        <TextView
+            android:id="@+id/tv_progress_vote_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/color_999"
+            android:textSize="13sp"
+            tools:text="15" />
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/iv_head"
+        android:layout_marginTop="18dp"
+        android:background="@color/color_eee" />
+
+</RelativeLayout>

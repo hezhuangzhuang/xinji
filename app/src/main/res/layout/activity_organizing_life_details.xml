@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zxwl.xinji.activity.OrganizingLifeDetailsActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@mipmap/ic_organizing_life_details_bg">
+
+        <ImageView
+            android:id="@+id/iv_back_operate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:src="@mipmap/general_white_back_icon" />
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_back_operate"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:src="@mipmap/ic_organizing_life_details_logo" />
+
+        <ImageView
+            android:id="@+id/iv_publish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_logo"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="15dp"
+            android:visibility="gone"
+            android:src="@mipmap/ic_publish" />
+
+        <FrameLayout
+            android:id="@+id/fl_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_logo"
+            android:layout_toLeftOf="@id/iv_publish"
+            android:layout_toRightOf="@id/iv_logo">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@mipmap/ic_organizing_down"
+                android:drawablePadding="10dp"
+                android:ellipsize="end"
+                android:paddingTop="5dp"
+                android:singleLine="true"
+                android:textColor="@color/color_fcd967"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                tools:text="王山口村" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_introduction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fl_title"
+            android:layout_toLeftOf="@id/iv_publish"
+            android:layout_toRightOf="@id/iv_logo"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:paddingTop="5dp"
+            android:textColor="@color/color_fcd967"
+            android:textSize="14sp"
+            tools:text="王山口村" />
+    </RelativeLayout>
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/tb_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_default_height"
+        android:background="@color/color_f6f6f6"
+        app:tl_indicator_color="@color/color_E42417"
+        app:tl_indicator_corner_radius="@dimen/tab_indicator_corner_tiny_radius"
+        app:tl_indicator_height="3dp"
+        app:tl_indicator_width="@dimen/tab_indicator_center_width"
+        app:tl_indicator_width_equal_title="false"
+        app:tl_tab_padding="@dimen/tab_bar_item_padding"
+        app:tl_tab_space_equal="false"
+        app:tl_textBold="SELECT"
+        app:tl_textSelectColor="@color/color_E42417"
+        app:tl_textUnselectColor="@color/color_677078"
+        app:tl_textsize="17sp" />
+
+    <com.zxwl.commonlibrary.widget.NoScrollViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</LinearLayout>

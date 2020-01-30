@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f9f9f9"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_change"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_eee"/>
+
+<!--    <com.flyco.tablayout.CommonTabLayout-->
+    <com.zxwl.xinji.widget.CustomCommonTabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        app:tl_iconHeight="25dp"
+        app:tl_iconWidth="25dp"
+        app:tl_iconMargin="2dp"
+        app:tl_textSelectColor="#E64A3A"
+        app:tl_textUnselectColor="#666666"
+        app:tl_textsize="12sp"
+        app:tl_underline_height="0dp"/>
+
+</LinearLayout>

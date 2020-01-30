@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="270dp"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <com.github.siyamed.shapeimageview.RoundedImageView
+        android:id="@+id/iv_img"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/shape_img_bg_3dp"
+        android:minHeight="200dp"
+        android:scaleType="center"
+        app:siBorderColor="@color/tran"
+        app:siBorderWidth="0dp"
+        app:siRadius="3dp"
+        app:siSquare="false"
+        tools:src="@color/black_alpha_45"/>
+
+    <TextView
+        android:id="@+id/tv_tilte"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:background="@color/color_fafafa"
+        android:ellipsize="end"
+        android:lineSpacingExtra="2dp"
+        android:maxLines="2"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/color_333"
+        android:textSize="19sp"
+        android:visibility="visible"
+        tools:text="习近平抵达莫斯科开始对俄罗斯联邦进行国事访问"/>
+
+</LinearLayout>

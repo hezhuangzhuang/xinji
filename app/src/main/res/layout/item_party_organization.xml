@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:drawableLeft="@mipmap/ic_party_organ"
+        android:drawableRight="@mipmap/ic_array_right"
+        android:drawablePadding="14dp"
+        android:gravity="center_vertical"
+        tools:text="支部数据"
+        android:textColor="@color/color_333"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_eee" />
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingTop="40dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_empty_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/iv_empty"/>
+
+    <TextView
+        android:id="@+id/tv_empty_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="暂无数据"
+        android:textColor="@color/color_AAB4BA"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/tv_retry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_bt_login_bg"
+        android:gravity="center"
+        android:padding="14dp"
+        android:text="重新加载"
+        android:textColor="@color/white"
+        android:textSize="15sp"/>
+</LinearLayout>

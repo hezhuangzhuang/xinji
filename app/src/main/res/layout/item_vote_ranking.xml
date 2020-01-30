@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="18dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="18dp"
+        android:background="@color/color_eee" />
+
+    <!--投票结果界面-->
+    <TextView
+        android:id="@+id/tv_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="13dp"
+        android:gravity="center"
+        android:minWidth="30dp"
+        android:textColor="@color/color_999"
+        android:textSize="25sp"
+        tools:text="1" />
+
+    <!--    <com.zxwl.commonlibrary.widget.CircleImageView-->
+    <!--        android:id="@+id/iv_head"-->
+    <!--        android:layout_width="50dp"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        android:layout_centerVertical="true"-->
+    <!--        android:layout_marginRight="20dp"-->
+    <!--        android:layout_toRightOf="@id/tv_order"-->
+    <!--        tools:src="@mipmap/ic_evaluation_user"/>-->
+
+    <com.github.siyamed.shapeimageview.RoundedImageView
+        android:id="@+id/iv_head"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/tv_order"
+        android:scaleType="center"
+        app:siBorderColor="@color/tran"
+        app:siBorderWidth="0dp"
+        app:siRadius="3dp"
+        app:siSquare="false"
+        tools:src="@color/black_alpha_45" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_head"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@id/iv_head"
+        android:textColor="@color/color_333"
+        android:textSize="15sp"
+        tools:text="1hao" />
+
+    <TextView
+        android:id="@+id/tv_party_branch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/iv_head"
+        android:textColor="@color/color_999"
+        android:textSize="13sp"
+        tools:text="董世出来" />
+
+    <TextView
+        android:id="@+id/tv_vote_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/color_666"
+        android:textSize="15sp"
+        tools:text="15" />
+
+</RelativeLayout>
